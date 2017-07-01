@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+div.huizihenzhifu{clear:both; padding:20px 20px 20px 0;}
+div.hzzfHead{ clear:both; height:35px;border-top:2px solid #fbc247;background:#F3F3F3; height:39px;}
+ul.hzzfHeadUl{float:left; margin-left:1px;}
+ul.hzzfHeadUl li{float:left; margin-right:1px;height:39px; line-height:38px; margin-top:0px; padding:0 30px;font-family:'微软雅黑'; letter-spacing:1px; font-size:13px; font-weight:bold; color:#606060;border-top:0px solid #606060; background:#F3F3F3; cursor:pointer;}
+ul.hzzfHeadUl li:hover{border-top:0px solid #043060; background:#fbc247;color:#fff; }
+ul.hzzfHeadUl li.huaguo{border-top:0px solid #0F427A; background:#fbc247; color:#fff;}
+
+div.hzzfBody{ clear:both;border-top:0px; margin-top:10px; }
+div.hzzfBodyTab{ clear:both;border-top:0px;}
+
+/*---------列表---------*/
+div.YDlistDiv{ clear:both; min-height:47px; margin-bottom:10px; position:relative;
+border:1px solid #fff; background:#fff; border-radius:3px;}
+
+div.stactTips{ position:absolute; left:-1px; top:-1px; width:20px; height:49px; border-radius:3px 0px 0px 3px;}
+.bgcolor_01{ background-color:#2bb7f2;}
+
+div.YDlistHeadBar{height:40px; padding-right:210px;cursor:pointer;}
+div.YDlistHeadBar:hover{ background:#fefff0;}
+table.YDlistHeadBarTable{ border-collapse:collapse; width:80%; float:left;}
+table.YDlistHeadBarTable th,table.YDlistHeadBarTable td{ padding:5px 8px; line-height:37px; border-right:0px solid #e1e1e1;text-align:left; font-family:'微软雅黑'; letter-spacing:0px; color:#666; font-size:12px;}
+table.YDlistHeadBarTable th{ width:150px; overflow:hidden;}
+font.textNuma{ margin:0 3px;
+font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#ff6600; font-weight:bold;}
+font.textText{ color:#333; font-weight:bold;font-size:12px;}
+
+div.YDlistHeadRight{ position:absolute; right:-1px; top:-1px;height:49px;}
+div.stactBar{ float:left; /*width:205px;*/ height:32px; margin:9px 5px 0 10px;}
+
+ul.stactBarUl li{ float:left; padding:0 15px; height:32px; line-height:32px; margin-right:9px;
+text-align:center; font-family:'微软雅黑'; letter-spacing:0px; color:#999; font-size:13px;
+background-position:center center; background-repeat:no-repeat; background-color:#c0e2e2; border-radius:3px;}
+ul.stactBarUl li b{ font-size:16px; font-weight:normal; color:#ff0;}
+
+ul.stactBarUl li.pass{ background-color:#fa9a5e;color:#fff;}
+ul.stactBarUl li.doing{ background-color:#e9c810;}
+
+a.sliderDownList{ float:left; width:49px; height:49px;border-radius:0px 3px 3px 0px; cursor:pointer;
+background:url(../images/arrow_left35.png) no-repeat center center #61c1fb;}
+a.sliderDownList:hover{ background-color:#6f9fcd;}
+div.YDlistDiv a.sliderUpList{ background-image:url(../images/yd/ico_up.png);}
+a.sliderRightList{ float:left; width:49px; height:49px;border-radius:0px 3px 3px 0px; cursor:pointer;
+background:url(../images/yd/ico_right.png) no-repeat center center #8cadcd;}
+a.sliderRightList:hover{ background-color:#6f9fcd;}
+
+span.hzzfSpan{background: url(../images/checkbox.png) no-repeat center center; float:right;width:20px; padding: 15px 5px; margin-top:10px;cursor:pointer;}
+span.hzzfSpan2{background:#e1c529 url(../images/checkboxho.png) no-repeat center center ;display:block;}
+
+div.hzzfBodyText{ height:30px; background:#FFF; padding:20px 50px;letter-spacing:1px;}
+div.hzzfBodyText font{ font-family:"微软雅黑"; font-size:14px;font-weight:bold; line-height:30px; color:#ff6600;}
+div.zhifu{ margin:20px 0px;}
+div.zhifuanniu{ margin:0 auto; width:120px; height:40px; line-height:40px;letter-spacing:4px; font-family:"微软雅黑"; font-size:16px; text-align:center; color:#ffffff; background:#fb8c43;border-radius: 3px 3px 3px 3px; padding:0px; cursor:pointer; }
+
+div.zhifuanniu:hover{background:#F60;}

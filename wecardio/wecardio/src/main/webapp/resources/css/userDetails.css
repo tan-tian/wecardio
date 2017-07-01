@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**/
+html, body{  font-size:12px;  font-family:Tahoma "微软雅黑"; height:100%;background:#e8e8e8;}
+img { border:none;}
+ul li{list-style:none;}
+a{text-decoration:none;}
+a:hover {text-decoration:none;}
+table{ border:none;}
+tr{ border:none;}
+td{ border:none;}
+
+
+.userDetails{padding:20px 20px 20px 0;}
+
+/*头部*/
+div.detailsTop{ position:relative;height:240px; background:#FFF; padding:10px 10px 10px 0px; margin-bottom:10px;}
+div.detailsTop_a{ position:absolute; left:0px; top:0px;}
+div.detailsTop table{ float:left; margin:0 auto; height:240px; padding-left:260px; width:100%}
+div.detailsTop table tr{ font-family:"微软雅黑"; font-size:12px;height:20px; width:300px;}
+div.detailsTop table td{   height:20px; color:#8f8f8f; letter-spacing:1px; text-align:right; width: 80px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;overflow:hidden;}
+div.detailsTop table th{height:20px;color:#222222;letter-spacing:1px; text-align:left; border-bottom:solid 1px #e8e8e8;}
+div.detailsTop table span{ padding:0 5px; border-radius: 3px 3px 3px 3px; background:#e7d04f;}
+/*头部ENG*/
+
+/*中部*/
+
+div.detailsMain{height:250px; padding:10px; 20px; background:#FFF;}
+div.detailsMain_tittle{background:url(../images/userdetails/tittle.jpg) no-repeat left center; height:35px; width:100%; border-bottom:solid 1px #bababa; }
+span.detailsMain_t1{ font-family:"微软雅黑"; font-size:18px; padding:5px 5px 5px 15px; color:#222222;float:left;letter-spacing:5px;cursor: pointer;}
+span.detailsMain_t2{ width:50px; text-align:center;font-family:"微软雅黑"; font-size:14px;background:#51c399;float:right;cursor: pointer; color:#FFF;}
+span.detailsMain_t2:hover{background:#2ea177;}
+div.detailsMain table{ float:left;width:100% ; height:245px; border:solid 1px #e8e8e8;border-radius: 3px 3px 3px 3px; border-collapse:collapse; }
+div.detailsMain table tr{ font-family:"微软雅黑"; font-size:12px;height:20px;letter-spacing:3px;color:#4d4d4d; text-align:center;}
+.xiahuaxian{border-bottom:solid 1px #e8e8e8;}
+div.detailsMain table tr.tableTittle{ font-family:"微软雅黑"; font-size:12px; font-weight:bold;height:20px;letter-spacing:3px;color:#222222;text-align:center;border-bottom:solid 1px #e8e8e8;}
+div.detailsMain table span{color:#8f8f8f;}
+div.detailsMain table td{ border:solid 1px #e8e8e8;}
+
+div.detailsBottom{margin-top:20px;height:300px; padding:0 10px;}
+div.detailsBottom_tittle{background:url(../images/userdetails/tittle.jpg) no-repeat left center;height:35px; width:100%; border-bottom:solid 1px #8f8f8f;}
+/*中部END*/
+
+div.jiachajilu{ padding-top:10px; background:#f3f3f3;}
+
+/*医嘱*/
+div.talkBarDiv{ clear:both; min-height:100px; padding-left:80px; position:relative; margin:10px 0px;
+    background: url(../images/wentidetailother.png) no-repeat 56px 10px;}
+
+div.userpicDiv{ position:absolute; left:0px; top:0px; width:70px; height:80px;}
+div.userpicDiv img{ width:60px; height:60px; margin:0 auto; display:block; border-radius:60px;}
+div.userpicDiv a{ clear:both; float:left; width:70px; height:18px; line-height:18px;
+    font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#999; text-align:center;}
+
+div.talkBarDivMain{ background:#F9F9F9; border-radius:6px; padding:0 10px;}
+
+div.talkBarDivHead{ clear:both; height:34px; border-bottom:1px solid #efefef;}
+div.talkBarDivHead h1{ float:left; height:34px; line-height:34px;
+    font-family:'微软雅黑'; letter-spacing:1px; font-size:15px; color:#000;}
+ul.talkBarDivHeadUl{ float:right;}
+ul.talkBarDivHeadUl li{ float:left;}
+ul.talkBarDivHeadUl li span,ul.talkBarDivHeadUl li a{ float:left; height:34px; line-height:34px; margin-right:5px;
+    font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#ccc;}
+
+div.talkBarDivBody{ clear:both; height:56px; padding:5px;font-family:'微软雅黑'; color:#858484;}
+
+div.talkBarDivfoot{ clear:both; height:25px; border-top:1px dotted #efefef;}
+a.pingjia{ float:right; display:inherit; padding:0 10px; margin-top:5px; height:18px; line-height:18px;
+    font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#fff; text-align:center;
+    background:#f7a247; border-bottom:2px solid #ee983c; border-radius:3px; cursor:pointer;}
+a.pingjia:hover{background:#fd751f; border-bottom:2px solid #e95a00; color:#ff0;}
+
+font.timeshowText{ float:left; height:20px; line-height:20px;
+    font-family:Arial; letter-spacing:1px; font-size:12px; color:#999; text-align:center;}
+
+
+/*医嘱END*/
+
+
+/*底部按钮*/
+
+
+/*div.dibuanniu{ height:50px;margin-top:20px;}
+div.dibuanniu_a{height:50px; width:100%; }
+div.dibuanniu_a ul{list-style:none; width:300px; height:50px; margin:0 auto; }
+li.anniu{ background:#51c399;font-family:"微软雅黑"; font-size:14px; padding:5px 5px 5px 15px;padding:5px 5px 5px 5px;border-radius: 3px 3px 3px 3px;border-bottom:solid 3px #2ea177;letter-spacing:3px; text-align:center; color:#FFF; float:left;margin-left:30px;cursor: pointer;}
+li.anniu:hover{ background:#2ea177;border-bottom:solid 3px #339966;}*/
+
+
+/*无数据*/
+div.noneData{ min-height:200px; background:url(../images/nodata.jpg) no-repeat center center #fff;}

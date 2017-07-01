@@ -1,0 +1,84 @@
+.msgBox {
+	width: 300px;
+	background-color: #fff;
+	border-radius: 5px;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+.msgBox-title {
+	font-weight: bold;
+	background-color: #09C1FF;
+	color: #fff;
+	border-radius: 5px 5px 0 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0 45px 0 10px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.msgBox-content {
+	padding: 20px 15px;
+	line-height: 22px;
+	text-align: left;
+	font-size: 14px;
+}
+
+.msgBox-footer {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-top: 1px solid #EBEBEB;
+}
+
+.msgBox-footer-button {
+	height: 39px;
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.msgBox-tips-content {
+	display: inline-block;
+	text-align: left;
+	word-break: break-all;
+	padding: 20px 15px;
+	background-color: #000;
+	filter: alpha(opacity = 80);
+	opacity: .8;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 22px;
+	min-width: 20px;
+	max-width: none;
+}
+
+.layui-layer{
+	border-radius: 5px;
+}
+.layui-layer-content{
+	border-radius: 5px;
+}
+.layer_notice {
+	float: left;
+	width: auto;
+	overflow: hidden;
+	background: #5FB878;
+	padding: 10px;
+}
+
+.layer_notice li {
+	font-family: '\5FAE\8F6F\96C5\9ED1';
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	text-decoration: none;
+}

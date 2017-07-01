@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	scrollbar-face-color:#DEF;
+	scrollbar-highlight-color:#FFF;
+	scrollbar-shadow-color:#9BC;
+	scrollbar-3dlight-color:#ACD;
+	scrollbar-arrow-color:#68A;
+	scrollbar-track-color:#EEE;
+	scrollbar-darkshadow-color:#DEF;
+	font-size:12px;
+	font-family:'微软雅黑';
+}
+body{ position:relative;background:#e8e8e8;}
+*{padding:0;margin:0;}
+a{ text-decoration:none; color:#0CF;outline:none;}
+a:active {outline: none;star:expression(this.onFocus=this.blur());}
+img{border:none;}
+ul{ list-style:none;}
+
+
+div.pageMain{ padding:20px 20px 10px 0px;}
+
+
+
+/*---------按钮工具条---------*/
+ul.toolBarList{ float:right;}
+ul.toolBarList li{ float:left; margin-right:5px; height:26px; line-height:26px; padding:0 10px;
+	background:#f7a247; border-bottom:2px solid #ee983c; cursor:pointer; border-radius:3px;}
+ul.toolBarList li:hover{background:#fd751f; border-bottom:2px solid #e95a00;}
+ul.toolBarList li a{ height:26px; line-height:26px;color:#fff;font-family:'微软雅黑'; text-align:center; letter-spacing:1px; }
+
+a.checkbox{ width:20px; height:32px; float:left; margin-top:8px; cursor:pointer;}
+a.checkbox:hover{background:url(../images/checkboxed.png) no-repeat center center;}
+a.uncheck{background:url(../images/checkbox.png) no-repeat center center;}
+a.checked{background:url(../images/checkboxed.png) no-repeat center center;}
+
+div.stactTips a.checked{background:url(../images/checkboxho.png) no-repeat center center;}
+/*---------按钮工具条end---------*/
+
+
+/*------------------*/
+div.projectDetailHead{ clear:both; padding-left:145px; height:150px; position:relative; margin-bottom:20px; background:#f9f9f9;}
+div.projectDetailHeadA{margin-bottom:15px; height:180px;}
+div.projectDetailStact{ position:absolute; left:0; top:0px; z-index:100; width:130px; height:150px; background:#468afa;}
+h1.projectDetailStactTitle{ clear:both; border-bottom:2px solid #4176cd; height:35px; line-height:35px; text-align:center;
+	font-family:'微软雅黑'; letter-spacing:2px; font-size:12px; color:#e1e1e1;}
+a.projectDetailStactBody{ display:block; width:130px; height:105px; line-height:105px;
+	font-family:'微软雅黑'; letter-spacing:6px; font-size:20px; color:#fff; text-align:center; font-weight:bold;
+	background:url(../images/ico_timing.png) no-repeat center center; }
+
+div.YDDetailStact{position:absolute; left:0; top:0px; z-index:100; width:140px; height:150px; background:#61c1fb;}
+div.YDDetailStactDiv{ clear:both; height:110px;}
+div.YDDetailStactDivA{height:140px;}
+div.YDDetailStactDiv h2{clear:both; padding-top:30px; line-height:35px;
+	font-family:'微软雅黑'; letter-spacing:2px; font-size:18px; color:#fff; text-align:center; font-weight:bold;}
+div.YDDetailStactDiv h3{clear:both;height:20px; line-height:20px;
+	font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#f6f6f6; text-align:center; font-weight:normal;}
+h1.YDDetailStactData{clear:both;height:40px; line-height:40px;
+	font-family:Arial; letter-spacing:1px; font-size:12px; color:#fff; text-align:center; font-weight:normal;
+	background:#43aeee;}
+
+div.projectDetailHeadTitle{ height:35px; line-height:35px; border-bottom:1px solid #e9e9e9; margin:0 5px;
+	font-family:'微软雅黑'; letter-spacing:2px; font-size:20px; color:#064e46; text-align:left; font-weight:bold;}
+div.projectDetailHeadTitle h1{ height:35px; line-height:35px; float:left;
+	font-family:'微软雅黑'; letter-spacing:2px; font-size:20px; color:#000; text-align:left; font-weight:bold;}
+div.projectDetailHeadTitle span{ height:30px; line-height:30px; float:right; margin-right:10px; margin-top:5px; padding:0 10px;
+	font-family:'微软雅黑'; letter-spacing:1px; font-size:14px; color:#999; text-align:left; font-weight:normal;}
+div.projectDetailHeadTitle span b{ margin:0 5px; font-family:Arial, Helvetica, sans-serif; font-size:20px;color:#fd751f;}
+
+div.projectDetailHeadBody{ padding:0px 5px 0px; overflow:hidden; margin:0 5px;}
+a.buyA{position:absolute; right:10px; bottom:10px; z-index:100; float:left; padding:0 20px; height:30px; line-height:30px; cursor:pointer;
+	font-family:'微软雅黑'; letter-spacing:1px; font-size:14px; color:#fff;font-weight:normal;
+	background:#fe8e15; border-radius:3px;}
+a.buyA:hover{ background:#fd751f;}
+
+/*--------*/
+table.userMsgTable{ width:100%; border-collapse:collapse;}
+table.userMsgTable tr th,table.userMsgTable td{ border-bottom:0px dotted #e9e9e9; padding:6px;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px;
+	height:16px; line-height:16px; }
+table.userMsgTable tr th{text-align:left;color:#222222; font-weight:bold;font-size:12px; padding-right:0px;}
+table.userMsgTable tr td{width:90px;text-align:right;color:#8f8f8f; font-weight:normal; padding-left:0px;
+white-space: nowrap;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;overflow:hidden;}
+/*--------*/
+
+
+/*-------------*/
+div.userMain{ padding:10px 10px 0px 0px; background:#efefef;}
+div.userContent{ clear:both; margin-bottom:10px; overflow:hidden; height:370px;}
+div.userDiv{ float:left; width:95px; height:25px; line-height:20px; padding-top:70px; margin-left:8px; margin-bottom:8px; position:relative;
+	font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#767879; text-align:center;
+	background:url(../images/userpic.png) no-repeat center 15px #fff; cursor:pointer;}
+div.userDiv:hover{ background-color:#fefbc9;}
+
+div.userOnline{ background-color:#499934; color:#fff;}
+div.userYinShen{ background-color:#e0b904; color:#fff;}
+
+div.userDetailCont{ padding:10px; padding-right:0px;}
+div.userDetailContHead{ clear:both; height:37px; line-height:37px; border-bottom:1px solid #e3e3e3; background:#f7f7f7;}
+div.userDetailContHead a:hover{ background:#fc771f;}
+div.userDetailContHead a{ float:right; padding:0px 10px; background:#ffa03a; color:#FFF; cursor:pointer;}
+h1.userDetailConthText{ float:left; height:37px; line-height:37px; padding:0 10px;font-family:'微软雅黑'; letter-spacing:1px; font-size:16px; font-weight:normal; color:#010101;
+	border-left:3px solid #ffa03a;}
+a.loadUserDetail{ float:right;height:37px; width:40px; background:url(../images/arrowrightb.png) no-repeat center center #406a98; cursor:pointer;}
+a.loadUserDetail:hover{ background-color:#09386B;}
+
+div.userDetail{ clear:both; padding:10px 10px 20px 10px;
+	background:#fff;}
+h1.userDetailh1{ height:24px; line-height:24px; padding:0 10px;
+	font-family:'微软雅黑'; letter-spacing:1px; font-size:13px; font-weight:normal; color:#010101;}
+h1.userDetailh1 font{font-family:'微软雅黑'; letter-spacing:1px; font-size:12px;color:#969696;}
+/*-------------*/
+
+/*附件列表*/
+.xitongJieshao{float:left;background:#fff;padding:0 30px;width:92%;}
+.xitongJieshao dt{clear:both;width:100%;}
+.xitongJieshao dt h1{clear:both;width:100%;font-size:16px;color:#1f7ed9;border-bottom:2px solid #d4d4d4;line-height:40px;padding-top:20px;position:relative;}
+.gongneng,.waijie,.yingjian,.xuqiu,.fujian{float:left;width:100%;margin:10px auto 0 auto;}
+.gongneng li{width:130px;height:30px; padding-top:60px;float:left;text-align:center;margin-left:10px;cursor:pointer;display:table;position:relative;
+	background:url(../images/ico_wordb.png) no-repeat center 15px #79b16b;}
+.gongneng li:hover{background-color:#6ca95d;}
+.gongneng li h6{font-family:'微软雅黑';color:#fff;font-weight:normal;font-size:12px;padding:0 5px;height:30px; line-height:30px;
+	background:#5d9a4e; border-top:1px solid #5a964b;
+	width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+.gongneng li a{display:none;width:24px;height:24px; position:absolute; top:0px; left:0px;
+	background:url(../images/checkboxho.png) no-repeat center center #4a8b3a;}
+.gongneng li:hover a{ display:block;background:url(../images/checkboxed.png) no-repeat center center #4a8b3a;}
+div.userDetail .gongneng li a.checked{display:block;background:url(../images/checkboxho.png) no-repeat center center #4a8b3a;}
+
+div.allCheckMain{ float:right; height:30px; margin-right:15px; border-right:1px solid #e2e2e2;}
+a.allCheck{ float:left; height:28px; line-height:28px; padding-left:20px; padding-right:15px;font-family:'微软雅黑';color:#5D5D5D;font-weight:normal;font-size:12px;background:url(../images/checkbox.png) no-repeat left center; cursor:pointer; margin-top:2px;}
+a.allCheck:hover{background:url(../images/checkboxed.png) no-repeat left center; color:#468835;}
+div.allCheckMain a.allChecked{background:url(../images/checkboxed.png) no-repeat left center;}
+
+/*----分页----*/
+ul.gongneng div.pageNo span{ width:36px; height:10px; background:#ddd;}
+ul.gongneng div.pageNo span:hover{ background:#79b16b;}
+ul.gongneng div.pageNo span.on{ background:#5d9a4e;}
+
+div.table_xindian{ margin-top:10px;}
+div.list_timeBar{ background:#f3f3f3; height:44px; line-height:44px;}
+ul.list_time{ float:left; margin:7px 20px 7px 0;}
+ul.list_time li{ width:60px; height:30px; line-height:30px; letter-spacing:1px;font-family:'微软雅黑'; font-size:12px; color:#fff; background:#ccc; margin-left:10px; float:left; border-radius:3px; text-align:center; cursor:pointer;}
+ul.list_time li:hover{ background:#ffa03a;}
+ul.list_time li.up{ background:#ffa03a;}
+
+div.list_timeBar a.icoA{ float:right; width:38px; height:38px; padding-right:30px;}
+a.ico_list{background:url(../images/list.png) no-repeat center 6px;}
+a.ico_chart{background:url(../images/chart.png) no-repeat center 6px;}
+/*列表样式*/
+table.datalistTable{width:100%; border-collapse:collapse; border:solid 1px #ddd}
+table.datalistTable thead tr th{ width:20%;height:28px; line-height:28px; border-bottom:1px solid #ddd; border-right:1px solid #ddd;padding:3px;font-family:'微软雅黑'; letter-spacing:1px; font-size:13px; color:#000; background:#f8f8f8;}
+table.datalistTable thead tr th.checkTh{ width:1%;}
+table.datalistTable thead tr th.timeTh{ width:30%;}
+
+table.datalistTable tbody tr td,table.datalistTable tbody tr th{height:28px; line-height:28px; padding:2px 8px; border-bottom:1px dotted #e7e7e7; border-right:1px dotted #e7e7e7;font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#6B6B6B; text-align:center;}
+table.datalistTable tbody tr.odd td{ background:#f6f6f6;}
+table.datalistTable tbody tr:hover td{ background:#fdffef;}
+table.datalistTable tbody tr.clickbg td{ background:#e1f5fe;}
+
+
+/*----Tab菜单----*/
+div.objBox{ clear:both; margin-bottom:20px;}
+div.objBoxHead{ clear:both; height:35px; border-bottom:1px solid #0F427A; }
+div.objBoxHeadTab{ border-bottom:1px solid #fff; border-top:2px solid #fbc247;background:#F3F3F3; height:39px;}
+h1.objBoxhText{ float:left; height:28px; line-height:28px; margin-top:3px; padding:0 20px;
+	font-family:'微软雅黑'; letter-spacing:1px; font-size:13px; font-weight:bold; color:#fff;
+	border-top:4px solid #043060; background:#0F427A;}
+
+ul.objBoxHeadTabUl{ float:right; margin-left:1px;}
+ul.objBoxHeadTabUl li{float:left; margin-right:1px;height:37px; line-height:38px; margin-top:0px; padding:0 30px;font-family:'微软雅黑'; letter-spacing:1px; font-size:13px; font-weight:bold; color:#606060;border-top:0px solid #606060; background:#f7f7f7; cursor:pointer;}
+ul.objBoxHeadTabUl li:hover{border-top:0px solid #043060; background:#fbc247;color:#fff; }
+ul.objBoxHeadTabUl li.lion{border-top:0px solid #0F427A; background:#fbc247; color:#fff;}
+
+div.objBoxBody{ clear:both; border:1px solid #ddd; border-top:0px;}
+div.objBoxBodyb{ clear:both; border:1px solid #ddd; border-top:0px; display:none;}
+
+p.projectdcript{clear:both; overflow:hidden; text-indent:24px; padding:10px; line-height:18px;
+	font-family:'微软雅黑'; letter-spacing:1px; font-size:13px; color:#717171;}
+
+table.datalistB thead th{ background:#e8e8e8; height:35px; line-height:35px; border-bottom:1px solid #ccc;border-top:1px solid #ddd;}
+table.datalistB tbody td{height:30px; line-height:30px;}
+
+/*--------*/

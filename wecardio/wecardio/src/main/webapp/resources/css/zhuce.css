@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+html, body{  font-size:12px;  font-family:Tahoma 幼圆; height:100%; position:relative;}
+body {scrollbar-face-color:#DEF;scrollbar-highlight-color:#FFF;scrollbar-shadow-color:#9BC;scrollbar-3dlight-color:#ACD;scrollbar-arrow-color:#68A;scrollbar-track-color:#EEE;scroll:#DEF;}
+body{ background:#fff;}
+*{padding:0; margin:0 auto;}
+img { border:none;}
+ul{list-style:none;}
+a{text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {star:expression(this.onFocus=this.blur());}
+input{ background:transparent; border:medium none; color:#bcbcbc; vertical-align:middle;font-family:'幼圆'; letter-spacing:1px;}
+
+
+/**/
+div.zhuceDiv{clear:both; margin:0 auto;}
+/*头部*/
+div.zhuceTop{ clear:both;height:90px; width:1120px; margin-bottom:10px;}
+div.logo{width:677px; height:90px;float:left;margin:0 auto;}
+
+/*中部*/
+div.zhuceCenter{ clear:both;height:506px; background:url(../images/loginbg.png) no-repeat center center #c5c5c6;padding-top:40px; }
+ul.mainUl{margin:0 auto; width:500px;}
+li.mainLi1{background:url(../images/tittle.png) no-repeat left center; height:29px; width:500px;margin-top:20px; margin-bottom:20px;}
+
+li.mainLi1 a{background:url(../images/fanhui3.png) no-repeat right center;font-family:'幼圆'; font-size:16px;color: #FFFFFF;padding-left:410px;padding-right:25px;}
+li.mainLi1 a:hover{background:url(../images/fanhui4.png) no-repeat right center; height:29px; width:500px;margin-top:20px; margin-bottom:20px;font-family:'幼圆'; font-size:16px;color: #FF6600;}
+
+ul li input{width:400px; height:48px; background:none repeat scroll 0 0; margin-left:60px; font-family:'幼圆'; font-size:16px; line-height:48px; color:#FFF;}
+
+li.mainLi2{background:url(../images/0.1yonghuming.png) no-repeat center center; height:48px; width:500px;margin-bottom:10px;}
+li.mainLi3{background:url(../images/0.1mima.png) no-repeat center center; height:48px;width:500px; margin-bottom:10px;}
+li.mainLi4{background:url(../images/0.1dianhua.png) no-repeat center center; height:48px; width:500px; margin-bottom:10px;}
+li.mainLi5{background:url(../images/0.1youxiang.png) no-repeat center center; height:48px; width:500px; margin-bottom:10px;}
+li.mainLi6{background:url(../images/0.1yanzhengma.png) no-repeat center center; height:48px; width:500px; margin-bottom:10px;}
+li.mainLi6 input{width:240px; height:48px; background:none repeat scroll 0 0; margin-left:60px; font-family:'幼圆'; font-size:16px; line-height:48px; color:#FFF; float:left;}
+li.mainLi6 div.yanzhengma{background:url(../images/update.png) no-repeat right center;height:48px; width:185px;padding-top:3px;float:left; padding-right:10px;}
+
+li.mainLi7{height:30px; width:500px; margin-bottom:10px;}
+a.mainLi7Link{background:url(../images/tongyi.png) no-repeat left center; height:30px; width:500px; padding-left:20px;color: #FFFFFF;font-family:'幼圆'; font-size:14px;}
+li.mainLi7 .dianji{background:url(../images/tongyi2.png) no-repeat left center; height:30px; width:500px; padding-left:20px;color: #FF6600;font-family:'幼圆'; font-size:14px;}
+li.mainLi7 a.mainLi7Link:hover{height:30px; width:500px; padding-left:20px;color: #FF6600;}
+
+li.mainLi8 a.mainLi8Link{background: none repeat scroll 0 0  #F93;border-bottom: 3px solid #F60;border-radius: 3px 3px 3px 3px;clear:both;color: #FFFFFF;cursor: pointer;display: block;font-family:'幼圆';font-size: 22px;height: 45px;width:500px;line-height:45px;text-align: center;text-decoration:none;}
+li.mainLi8 a.mainLi8Link:hover{background: none repeat scroll 0 0  #F60;border-bottom: 3px solid  #F30; text-decoration:none;}
+/*中部END*/
+
+/*底部*/
+
+div.zhuceBottom{ clear:both; height:20px; padding-top:20px;}
+div.zhuceBottom div{font-family:'幼圆'; font-size:14px; color:#999;}
+div.zhuceBottomCenter{ width:1080px; margin:0 auto;}
+div.zhuceBottomLeft{ float:left;}
+div.zhuceBottomRight{ float:right;}
+
+/*底部END*/

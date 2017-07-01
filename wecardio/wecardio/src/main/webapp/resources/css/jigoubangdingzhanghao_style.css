@@ -1,0 +1,330 @@
+@charset "utf-8";
+html{
+scrollbar-arrow-color:#606060; /*三角箭头颜色*/
+scrollbar-face-color:#c2c2c2; /*立体滚动条颜色（包括箭头部分的背景色）*/
+scrollbar-3dlight-color:#c2c2c2; /*亮边颜色*/
+scrollbar-highlight-color:#c2c2c2; /*高亮颜*/
+scrollbar-shadow-color:#f2f2f2; /*阴影颜色*/
+scrollbar-darkshadow-color:#f2f2f2; /*外阴影颜色*/
+scrollbar-track-color:#f2f2f2; /*背景颜色*/
+scrollbar-base-color:#c2c2c2; /*滚动条的基色*/
+}
+/*webkit浏览器滚动条样式*/
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-thumb{border-radius:10px;background:#c2c2c2;}
+::-webkit-scrollbar-thumb:window-inactive {background:#656565;}
+
+html,body{font-size:14px;font-family:'微软雅黑';padding:0;margin:0;color:#3e3a39;background:#e8e8e8;}
+*{padding:0;margin:0;}
+ul{margin:0px;padding:0;}
+li{list-style-type:none;}
+button{border:none;background:none;cursor:pointer;outline: none;font-family:'微软雅黑';star:expression(this.onFocus=this.blur());}
+select,input{font-family:'微软雅黑';}
+h1,h2,h3,h4,h5,h6{margin:0;display:block;font-weight:normal;font-size:14px;}
+a{text-decoration:none; color:#f05f33;cursor:pointer;outline:none;}
+a:hover{color:#32a6c8;}
+a:active{star:expression(this.onFocus=this.blur());outline:none;}
+img{border:none;}
+u,s{text-decoration:none;}
+input{font-size:14px;font-family:'微软雅黑';line-height:24px;border:1px solid #bebebe;background:#f8f8f8;color:#595757;}
+input:focus{border:1px solid #39a5e9;background:#fff;}
+
+
+div.pageMain{ padding:20px 20px 10px 0px;}
+
+
+/*------面包屑------*/
+div.addressBar{ clear:both; margin-bottom:10px;height:37px; line-height:37px; border-bottom:0px solid #c9d1dc; background:#f9f9f9; border-radius:3px; overflow:hidden;}
+a.leader{height:37px; line-height:37px; float:left; margin-left:5px; padding-left:30px;
+color:#3c4349; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px; font-weight:bold;
+background:url(../images/ico_home16.png) no-repeat 7px 9px; cursor:pointer;}
+a.leader:hover{ color:#000;}
+a.jumpback{height:37px; line-height:37px; float:left; margin-left:5px;
+color:#3c4349; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px; cursor:pointer;}
+a.jumpback:hover{ color:#000;}
+span.arrowText{height:37px; line-height:37px; float:left; margin:0px 5px;
+color:#787677; font-size:12px; font-family:'宋体';}
+span.normal{height:37px; line-height:37px; float:left; margin:0px 5px;
+color:#a3a3a3; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px;}
+
+a.goback{ float:right; padding-left:16px; padding-right:10px;height:37px; line-height:37px; border-left:1px solid #e2e5e9;
+color:#a3a3a3; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px; cursor:pointer;}
+a.goback:hover{ background-color:#e0c21b; border-left:1px solid #c4a915; color:#fff;}
+/*-----面包屑END-------*/
+
+/*-------------*/
+div.userMain{ padding:10px 10px 0px 0px; background:#efefef;}
+div.userContent{ clear:both; margin-bottom:10px; overflow:hidden; height:370px;}
+div.userDiv{ float:left; width:95px; height:25px; line-height:20px; padding-top:70px; margin-left:8px; margin-bottom:8px; position:relative;
+font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#767879; text-align:center;
+background:url(../images/userpic.png) no-repeat center 15px #fff; cursor:pointer;}
+div.userDiv:hover{ background-color:#fefbc9;}
+
+div.userOnline{ background-color:#499934; color:#fff;}
+div.userYinShen{ background-color:#e0b904; color:#fff;}
+
+div.userDetailCont{ padding:10px; padding-right:0px;}
+div.userDetailContHead{ clear:both; height:37px; line-height:37px; border-bottom:1px solid #e3e3e3; background:#f7f7f7;}
+h1.userDetailConthText{ float:left; height:37px; line-height:37px; padding:0 10px;
+font-family:'微软雅黑'; letter-spacing:1px; font-size:16px; font-weight:normal; color:#010101;
+border-left:40px solid #ffa03a; position:relative;}
+h1.userDetailConthText font{ position:absolute; left:-35px; top:0px; height:37px; line-height:37px; width:28px; text-align:center;
+font-family:Arial; letter-spacing:1px; font-size:20px; font-weight:normal; color:#fff; font-style:italic;}
+a.loadUserDetail{ float:right;height:37px; width:40px; background:url(../images/arrowrightb.png) no-repeat center center #406a98; cursor:pointer;}
+a.loadUserDetail:hover{ background-color:#09386B;}
+
+div.userDetail{ clear:both;padding:0px; background:#fff; position:relative; padding-bottom:33px;}
+
+div.sboxWrap{ }
+div.zgpicture{ position:absolute; left:10px; top:10px; width:230px; min-height:135px;}
+div.zgpictureMain{ clear:both; width:230px; height:135px; overflow:hidden; margin-bottom:10px;
+background:url(../images/user/user01.png) no-repeat center center #efefef}
+
+a.uploadBt{ clear:both; display:inherit;height:30px; line-height:30px;
+color:#fff;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px; border-radius:3px; text-align:center;
+background:#ffa03a; cursor:pointer;}
+a.uploadBt:hover{background:#fd751f;color:#FF0;}
+/*-------------*/
+
+
+
+/*--------*/
+table.userMsgTableb{ width:100%; border-collapse:collapse;}
+table.userMsgTableb tr th,table.userMsgTableb td{ border-bottom:1px dotted #e9e9e9; padding:8px;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px;}
+table.userMsgTableb tr th{ width:100px; text-align:right;color:#5d5d5d; font-weight:normal; padding-left:0px;}
+table.userMsgTableb tr td{ text-align:left;color:#222222; font-weight:bold;font-size:12px; padding-right:0px;}
+
+.redstar{font-family:'微软雅黑'; font-size:12px; margin:0 5px; color:#F00;}
+
+.proInput{height:20px; padding:8px; width:132px; line-height:20px; background:#fff;color:#757575;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px; background:url(../images/s_bgs.png) repeat-x 0 -119px #fff; border:1px solid #E6E6E6; border-radius:3px;}
+.proInput:hover{border:1px solid #BAC4CE;}
+.textareaStyle{ padding:8px; border:1px solid #E6E6E6;border-radius:3px; height:60px; line-height:14px; background:#fff;color:#757575;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px;}
+
+input.zjInput{height:20px; padding:8px; width:170px; line-height:20px; background:#fff;color:#757575;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px; background:url(../images/ico_date.png) no-repeat right center #fff; border:1px solid #E6E6E6; border-radius:3px;}
+input.zjInput:hover{border:1px solid #BAC4CE;}
+
+/*--------*/
+
+/*列表样式*/
+table.datalistTable{width:100%; border-collapse:collapse;}
+table.datalistTable thead tr th{ width:20%;height:28px; line-height:28px; border-bottom:1px solid #ddd; border-right:1px solid #ddd;padding:3px;
+font-family:'微软雅黑'; letter-spacing:1px; font-size:13px; color:#000; background:#f8f8f8;}
+table.datalistTable thead tr th.checkTh{ width:1%;}
+table.datalistTable thead tr th.timeTh{ width:30%;}
+
+table.datalistTable tbody tr td,table.datalistTable tbody tr th{height:28px; line-height:28px; padding:2px 8px; border-bottom:1px dotted #e7e7e7; border-right:1px dotted #e7e7e7;
+font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#6B6B6B;}
+table.datalistTable tbody tr.odd td{ background:#f6f6f6;}
+table.datalistTable tbody tr:hover td{ background:#fdffef;}
+table.datalistTable tbody tr.clickbg td{ background:#e1f5fe;}
+
+
+/*---搜索框----*/
+div.searchBar{ clear:both;padding: 4px 0 2px; height:30px; border-bottom: 1px dotted #DDDDDD;}
+span.spanName{ float:left;font-weight: bold;line-height: 30px;text-align: right;width: 85px; font-size:12px;}
+
+div.mohusearch{ height:20px; border:1px solid #E6E6E6;float:right; position:relative; padding: 8px;
+background:url(../images/s_bgs.png) repeat-x 0 -119px #fff;border-radius:3px;}
+div.mohusearch:hover{ border:1px solid #BAC4CE;}
+div.mohusearch span.searchSimpleInputb{ border:0; float:left;height:20px; width:137px; line-height:20px; padding-left:5px;color:#757575;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px;}
+div.mohusearch input.searchSimpleInputb{ border:0; float:left;height:8px; width:155px; line-height:20px; padding-left:5px;color:#757575;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px; background:none;}
+div.mohusearch a.searchSubb{ float:left; cursor:pointer;height:24px; width:24px; background:url(../images/hasddArrow.png) no-repeat center 9px ;}
+
+div.searchSimple{ height:24px; border:1px solid #CCCCCC;float:right; margin-top:6px;}
+div.searchSimple input.searchSimpleInput{ border:0; float:left;height:24px; width:137px; line-height:24px; padding-left:5px;color:#757575;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px;}
+div.searchSimple a.searchSub{ float:left; cursor:pointer;height:24px; width:24px; background:url(../images/searcha.jpg) no-repeat center -2px; border-left:1px solid #CCCCCC; }
+div.searchSimple a:hover,div.searchSimple a.searchSub:hover{background:url(../images/searcha.jpg) no-repeat center -32px;}
+
+
+div.searchDoult{ position:absolute; top:36px; left:-1px; z-index:100; width:190px; border:1px solid #d6d6d6; padding:5px; overflow:hidden; background:#f9f9f9; display:none; line-height:190px;}
+div.jieguo{ clear:both; max-height:180px; width:188px; overflow:auto; padding:0px; margin-top:5px; float:left;}
+ul.jieguolist li{ clear:both; line-height:24px; border-bottom:1px dotted #d6d6d6; text-align:left; color:#5d5d5d; cursor:pointer; text-indent:12px;}
+ul.jieguolist li:hover{ background:#F5F5F5;}
+
+
+div.searchFormBtMain{ height:29px; clear:both; padding:8px 0; margin:0 auto; background:#fcfcfc; border-top:1px solid #e6e6e6;}
+div.searchFormBt{ height:29px; clear:both; padding:0; width:250px; margin:0 auto; overflow:hidden; }
+div.searchFormBt a{ height:29px; line-height:29px; padding-left:4px;
+overflow:hidden;}
+div.searchFormBt a span{float:left; padding:0 25px 0 20px; height:29px; line-height:29px;overflow:hidden; letter-spacing:2px;}
+
+div.searchFormBt a.comit{ float:left; background:url(../images/customer/sumbtb.png) no-repeat left 0px;}
+div.searchFormBt a.comit span{ background:url(../images/customer/sumbtb.png) no-repeat right -29px; color:#343333;}
+div.searchFormBt a.comit:hover{ float:left; background:url(../images/customer/sumbtbho.png) no-repeat left 0px;}
+div.searchFormBt a.comit:hover span{ background:url(../images/customer/sumbtbho.png) no-repeat right -29px; color:#343333;}
+
+div.searchFormBt a.searchSumbit{ float:right; background:url(../images/customer/sumbta.png) no-repeat left 0px;}
+div.searchFormBt a.searchSumbit span{ background:url(../images/customer/sumbta.png) no-repeat right -29px; color:#fff;}
+div.searchFormBt a.searchSumbit:hover{ float:right; background:url(../images/customer/sumbtaho.png) no-repeat left 0px;}
+div.searchFormBt a.searchSumbit:hover span{ background:url(../images/customer/sumbtaho.png) no-repeat right -29px; color:#fff;}
+
+.redstar{font-family:'宋体'; font-size:12px; margin:0 5px; color:#F00;}
+/*------*/
+
+
+/*------*/
+h1.addimgDiv{ float:left;background: #fff;border: 1px solid #ddd;height:100px;padding: 5px;width: 168px; margin-right:10px; cursor:pointer; position:relative;}
+h1.addimgDiv:hover{ border:1px solid #999;}
+h1.addimgDiv img {height: 100px;width: 168px;}
+
+i.fengmian{ display:none; height:42px; line-height:14px; width:25px; padding-right:2px;position:absolute; left:8px; top:-1px; z-index:10;
+background:url(../images/tagpahang.png) no-repeat -27px 0px;
+color:#000;letter-spacing:1px; font-family:'微软雅黑'; font-style:normal; font-size:12px; font-weight:normal; text-align:center;}
+.addimgDiv i{color:#ff0;
+background:url(../images/tagpahang.png) no-repeat 0px 0px;}
+
+b.setFM{display:none; height:26px; line-height:26px; width:100%; position:absolute; left:0px; bottom:0px; z-index:10; border-top:1px solid #000;
+background:url(../images/gridbg04.png) repeat;
+color:#fff;letter-spacing:1px; font-family:'微软雅黑';font-size:12px; font-weight:normal; text-align:center;}
+
+/*------*/
+
+
+/*----------列表--------------*/
+table.datalist{ border-collapse:collapse; width:100%;color:#ccc; font-size:12px;}
+table.datalist thead th{ height:28px; line-height:28px; color:#0b0b0b;font-weight:bold;font-family:'微软雅黑';
+background:url(../images/tablelistbg.jpg) repeat-x;}
+table.datalist tbody td{ text-align:center; color:#151515; border-bottom: 1px dotted #d2d1d1; height:24px; line-height:24px;font-family:'微软雅黑'; font-size:12px;}
+table.datalist tbody tr.tableodd td{ background:#F4F4F4;}
+table.datalist tbody tr.tabletrho td{ background:#fdffe3; cursor:pointer;}
+table.datalist tbody tr.tabletrclick td{ background:#eeeeee; /*font-weight:bold;*/ color:#2a2a2a;}
+table.datalist tbody td a.underline{ text-decoration:underline; color:#0b0b0b;}
+table.datalist tbody td a.hoverunderline{ color:#0b0b0b;}
+table.datalist tbody td a.hoverunderline:hover{ text-decoration:underline; color:#0b0b0b;}
+table.datalist tbody td a:hover{ font-weight:bold;}
+
+/*--------页码----------*/
+div.pageBar{ clear:both;height:25px; padding:5px 0; border-top:1px solid #ccc;}
+.snPages{float:right;height:25px; padding-right:10px;}
+.snPages a,.snPages a:visited,.snPages span,.snPages div{position:relative;display:inline;float:left;margin-left:4px;color:#333;}
+.snPages span{margin:0 10px;}
+.snPages div{height:29px;line-height:26px;line-height:30px\9;+line-height:32px;_line-height:26px;margin-top:-1px;padding-left:30px;overflow:hidden;}
+.snPages a,.snPages a:visited{height:20px;line-height:20px;padding:0 8px;text-align:center;background:#fff;border:1px solid #d7d7d7;border-radius:4px 4px 4px 4px;}
+.snPages a.current{color:#f60;}
+.snPages a.prev,.snPages a.next,.snPages a.prev,.snPages a.next:visited{width:20px;height:20px;line-height:20px;line-height:28px\9;_line-height:24px;padding:0;overflow:hidden;}
+.snPages a.prev,.snPages span.prev{text-indent:6px;}
+.snPages a.next,.snPages span.next{margin-left:4px;text-indent:-6px;}
+.snPages span.prev,.snPages span.next{display:inline;float:left;width:20px;height:20px;line-height:20px;line-height:28px\9;_line-height:24px;margin:0;overflow:hidden;color:#b1b1b1;text-align:center;background:#fff;border:1px solid #d7d7d7;border-radius:4px 4px 4px 4px;}
+.snPages span.prev{+margin-right:4px;_margin-right:0;}
+.snPages span.next{margin-left:4px;}
+.snPages b{position:absolute;width:0;height:0;line-height:0;margin-top:-2px;+margin-top:-3px;font-size:0;border-width:5px;border-style:solid;border-color:#fff #333 #fff #fff;}
+.snPages a.prev b{left:1px;top:8px;}
+.snPages a.next b{right:1px;top:8px;border-color:#fff #fff #fff #333;}
+.snPages span.prev b{left:1px;top:8px;border-color:#fff #b1b1b1 #fff #fff;}
+.snPages span.next b{right:1px;top:10px;border-color:#fff #fff #fff #b1b1b1;}
+.snPages div input{+position:relative;+top:-2px;_top:-1px;+left:3px;width:32px;height:20px;line-height:20px;margin:0 3px;overflow:hidden;text-align:center;+vertical-align:middle;border:1px solid #d7d7d7;}
+.snPages div input.pagesubmit{position:relative; float:right; margin-top:2px; display:inline;cursor:pointer;width:45px;height:20px;line-height:20px;line-height:20px\9;+line-height:20px;_line-height:20px;overflow:hidden;background:url(images/common.png) no-repeat 0 0;border-radius:4px 4px 4px 4px;}
+.snPages div input.pagesubmit:hover{color:#f60;text-decoration:underline;}
+.snPages a:hover{color:#f60;}
+
+/*------------------*/
+
+
+
+/*--------*/
+div.objBox{ clear:both; margin-bottom:10px;}
+div.objBoxHead{ clear:both; height:35px; border-bottom:1px solid #0F427A;}
+h1.objBoxhText{ float:left; height:28px; line-height:28px; margin-top:3px; padding:0 20px;
+font-family:'微软雅黑'; letter-spacing:1px; font-size:13px; font-weight:bold; color:#fff;
+border-top:4px solid #043060; background:#0F427A;}
+
+div.objBoxBody{ clear:both; border:1px solid #ddd; border-top:0px;}
+
+table.datalistB thead th{ background:#f6f6f6; height:35px; line-height:35px; border-bottom:1px solid #e2e2e2;}
+table.datalistB tbody td{height:30px; line-height:30px;}
+
+/*--------*/
+
+
+
+
+/*--------------*/
+div.ctrolToolbar{ clear:both; margin-bottom:10px;margin-top:0px; height:55px; border-left:4px solid #CACACA; background:#F4F2F3;}
+
+div.numberBar{ clear:both; width:990px; height:50px; margin:0 auto;}
+div.ToolbarTextDiv{ float:left; margin:0 5px; margin-right:20px;}
+div.ToolbarTextDiv font.ctrolToolbarText{ float:left;}
+div.ToolbarTextDiv input.barInput{ float:left; padding:4px; height:18px; line-height:18px; margin-top:13px;color:#4c5054; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px;
+border:1px solid #ddd; border-radius:3px; background:#fff;}
+div.ToolbarTextDiv .ctrolToolbarTextb{  float:left;color:#049919; font-weight:normal; padding-top:8px; height:38px; line-height:38px;
+font-family:'微软雅黑'; letter-spacing:2px; font-size:20px;}
+div.ToolbarTextDiv .danwei{font-size:12px; color:#ef8514; font-weight:bold;}
+
+.ctrolToolbarText{ float:right; padding-top:8px; height:38px; line-height:38px;
+font-family:'微软雅黑'; letter-spacing:2px; font-size:16px; color:#000;}
+ul.ctrolToolbarUl{ float:right; padding:8px;}
+
+ul.ctrolToolbarUl li{ float:left; margin-left:8px;}
+ul.ctrolToolbarUl li a{ width:124px; height:38px; line-height:38px; float:left; border-radius:3px;
+font-family:'微软雅黑'; font-size:16px; color:#fff; text-align:center; letter-spacing:1px;
+border-bottom:3px solid #fd751f; background:#fe8e15; cursor:pointer;}
+ul.ctrolToolbarUl li a:hover{ background:#fd751f; border-bottom:3px solid #e95a00;}
+/*---------*/
+
+
+
+/*---------按钮工具条---------*/
+ul.toolBarList{ float:right;}
+ul.toolBarList li{ float:left; margin-right:5px; height:26px; line-height:26px; padding:0 10px;
+background:#f7a247; border-bottom:2px solid #ee983c; cursor:pointer; border-radius:3px;}
+ul.toolBarList li:hover{background:#fd751f; border-bottom:2px solid #e95a00;}
+ul.toolBarList li a{ height:26px; line-height:26px;color:#fff;font-family:'微软雅黑'; text-align:center; letter-spacing:1px; }
+
+a.checkbox{ width:20px; height:32px; float:left; margin-top:8px; cursor:pointer;}
+a.checkbox:hover{background:url(../images/checkboxed.png) no-repeat center center;}
+a.uncheck{background:url(../images/checkbox.png) no-repeat center center;}
+a.checked{background:url(../images/checkboxed.png) no-repeat center center;}
+
+div.stactTips a.checked{background:url(../images/checkboxho.png) no-repeat center center;}
+/*---------按钮工具条end---------*/
+
+
+
+/*---------按钮工具条---------*/
+ul.toolBarList{ float:right;}
+ul.toolBarList li{ float:left; margin-right:5px; height:26px; line-height:26px; padding:0 10px;
+color:#fff;font-family:'微软雅黑'; text-align:center; letter-spacing:1px; background:#f7a247; border-bottom:2px solid #ee983c; cursor:pointer;}
+ul.toolBarList li:hover{background:#fd751f; border-bottom:2px solid #e95a00;}
+ul.toolBarList li a{color:#fff;font-family:'微软雅黑'; text-align:center; letter-spacing:1px;}
+/*---------按钮工具条---------*/
+
+
+/*附件列表*/
+.xitongJieshao{float:left;background:#fff;padding:0 30px;width:92%;}
+.xitongJieshao dt{clear:both;width:100%;}
+.xitongJieshao dt h1{clear:both;width:100%;font-size:16px;color:#1f7ed9;border-bottom:2px solid #d4d4d4;line-height:40px;padding-top:20px;position:relative;}
+.gongneng,.waijie,.yingjian,.xuqiu,.fujian{float:left;width:100%;margin:10px auto 0 auto;}
+.gongneng li{width:130px;height:30px; padding-top:60px;float:left;text-align:center;margin-left:10px;cursor:pointer;display:table;position:relative;
+background:url(../images/ico_wordb.png) no-repeat center 15px #79b16b;}
+.gongneng li:hover{background-color:#6ca95d;}
+.gongneng li h6{font-family:'微软雅黑';color:#fff;font-weight:normal;font-size:12px;padding:0 5px;height:30px; line-height:30px;
+background:#5d9a4e; border-top:1px solid #5a964b;
+width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+.gongneng li a{display:none;width:24px;height:24px; position:absolute; top:0px; left:0px;
+background:url(../images/checkboxho.png) no-repeat center center #4a8b3a;}
+.gongneng li:hover a{ display:block;background:url(../images/checkboxed.png) no-repeat center center #4a8b3a;}
+div.userDetail .gongneng li a.checked{display:block;background:url(../images/checkboxho.png) no-repeat center center #4a8b3a;}
+
+div.allCheckMain{ float:right; height:30px; margin-right:15px; border-right:1px solid #e2e2e2;}
+a.allCheck{ float:left; height:30px; line-height:30px; padding-left:20px; padding-right:15px;
+font-family:'微软雅黑';color:#5D5D5D;font-weight:normal;font-size:12px;
+background:url(../images/checkbox.png) no-repeat left center; cursor:pointer;}
+a.allCheck:hover{background:url(../images/checkboxed.png) no-repeat left center; color:#468835;}
+div.allCheckMain a.allChecked{background:url(../images/checkboxed.png) no-repeat left center;}
+
+/*----分页----*/
+ul.gongneng div.pageNo span{ width:36px; height:10px; background:#ddd;}
+ul.gongneng div.pageNo span:hover{ background:#79b16b;}
+ul.gongneng div.pageNo span.on{ background:#5d9a4e;}
+
+
+
+
+
+
+
+
+
+
+

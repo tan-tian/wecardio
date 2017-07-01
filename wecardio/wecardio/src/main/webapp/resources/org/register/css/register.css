@@ -1,0 +1,9 @@
+label.fieldError {
+    line-height: 20px;
+    color: #ff7d25;
+    padding-left: 6px;
+}
+
+li input {
+    border: none;
+}

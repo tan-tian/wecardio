@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+div.shezhi{ height:80px; padding:30px;}
+div.shezhi ul{ margin:0 auto; width:235px; }
+div.shezhi ul li.qizhi{ border:1px solid #ccc; border-radius:4px; height:68px; width:68px; margin-right:8px; cursor:pointer; float:left}
+div.shezhi ul li.qizhiA{ background:url(../images/zhifu/gou.png) no-repeat right bottom;border:1px solid #fb8c43;}
+div.shezhi ul li.qizhi:hover{border:1px solid #fb8c43; }
+div.shezhi ul li.qizhi img{ margin:10px 10px 0px 15px;}
+
+div.comfirBar{ clear:both; margin-bottom:10px;margin-top:0px; height:55px; border-left:0px solid #CACACA; background:#F4F2F3;}

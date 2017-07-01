@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.echartMap-zoomIn{
+	position : absolute;
+	width : 30px;
+	height : 30px;
+	right : 20px;
+	bottom : 70px;
+	background : url(../images/zoomIn.png) no-repeat center center;
+}
+.echartMap-zoomOut{
+	position : absolute;
+	width : 30px;
+	height : 30px;
+	right : 20px;
+	bottom : 20px;
+	background : url(../images/zoomOut.png) no-repeat center center;
+}

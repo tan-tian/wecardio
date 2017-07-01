@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*---激活-----*/
+.Page_jihuo{ margin-top:20px;}
+.Page_Main{ width:1000px; height:358px; margin:0 auto; background:#fff; padding-top:100px;font-size:16px;font-family:'微软雅黑'; }
+.Page_succeed{ padding-top:128px; height:30px; width:128px; background:url(../images/done.png) no-repeat center top; margin:0 auto;text-align:center; letter-spacing:1px; color:#666;}
+.Page_fail{ padding-top:128px;background:url(../images/fail.png) no-repeat center top; margin:0 auto;text-align:center; letter-spacing:1px; color:#666;}
+.Page_fail p{font-size:12px; line-height:16px; width:400px; margin:0 auto; padding-top:10px; text-align:center;}
+
+
+
+

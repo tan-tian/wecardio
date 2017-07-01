@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/**/
+html, body{  font-size:12px;  font-family:Tahoma "微软雅黑"; height:100%; background:#e8e8e8;}
+img { border:none;}
+ul li{list-style:none;}
+a{text-decoration:none;}
+a:hover {text-decoration:none;}
+
+
+/*头部*/
+div.zhifu{background:#fff; min-height:553px;}
+div.zhifuTop{ background:url(../images/zhifu/tittle.jpg) no-repeat left center; height:40px; line-height:40px; padding-left:10px;font-family:"微软雅黑"; font-size:16px; letter-spacing:2px; border-bottom:solid 1px #c0bebe;}
+div.zhifuTopMain{ }
+div.zhifuTopMain table{height:100px; width:100%; margin-top:50px;margin-bottom:50px; }
+
+div.zhifuTopMain table tr{font-family:"微软雅黑"; font-size:12px;letter-spacing:2px; color:#4d4d4d;}
+div.zhifuTopMain table tr td{ text-align:center;}
+div.zhifuTopMain table tr td.zhifuTopMain01{ text-align:right;}
+div.zhifuTopMain table tr td.zhifuTopMain02{ text-align:left;}
+div.zhifuTopMain table tr td.zhifuTopMain02 input{ background:none; border:solid 1px #bababa;font-family:"微软雅黑"; font-size:12px; color:#4d4d4d; width:250px;border-radius:3px; height:30px; padding:0 8px;}
+div.zhifuTopMain table tr td span{text-align:left; color:#999999;}
+div.dianji1{ padding:0px 18px;width:200px; height:75px; float:left; border:solid 1px #fff;}
+div.dianji2{ background:url(../images/zhifu/gou.png) no-repeat right bottom; border:solid 1px #fb8c43;}
+
+h1.moneyNumberA{ float:left; padding:11px 10px 10px 0; height:28px; line-height:28px;
+color:#999; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px; font-weight:normal;}
+h1.moneyNumberA b{ font-size:18px; font-family:Arial, Helvetica, sans-serif; color:#e0c21b; padding-right:5px;}
+
+h1.moneyNumberB{ float:left; padding:11px 10px 10px 0; height:28px; line-height:28px;
+color:#999; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px; font-weight:normal;}
+h1.moneyNumberB b{ font-size:18px; font-family:Arial, Helvetica, sans-serif; color:#F93; padding-right:5px;}
+
+div.zhifuTopMain table a.chongzhi{ display:block; background:#fe8e15 ;width:80px; height:30px; line-height:30px; text-align:center; float:left; color:#fff; font-size:14px; letter-spacing:2px; border-radius:3px; margin-top:10px;margin-left:15px; }
+div.zhifuTopMain table a.chongzhi:hover{background:#fd751f; }
+div.zhifuTopMain table a.queren{display:block; background:#fe8e15 ;width:180px; height:40px; line-height:40px;color:#fff; font-size:16px; letter-spacing:2px; border-radius:3px; text-align:center; margin:0 auto;border-bottom:3px solid #fd751f; margin-top:40px; }
+div.zhifuTopMain table a.queren:hover{ background:#fd751f; border-bottom:3px solid #e95a00;}
+/*头部END*/
+
+/*Main*/
+
+
+/*银联*/
+div.zhifuMain{ height:300px; position:relative; margin-top:180px;}
+
+
+div.yinlian{ padding-top:50px;display:none;}
+div.yinlian ul{ width:350px;margin:0 auto;}
+div.yinlian ul li{font-family:"微软雅黑"; font-size:12px;width:400px; height:55px; line-height:55px;letter-spacing:2px; cursor:pointer;text-align:center; margin-bottom:10px;}
+div.yinlian ul li img{ padding:10px 0px 10px 10px; float:left; }
+div.yinlian ul li div.kahao{ height:55px; line-height:55px;float:left;border-left:solid 1px #e8e8e8; padding-left:10px;}
+div.yinlian ul li.yinlianLi01{text-align:center; border:solid 1px #e8e8e8;}
+div.yinlian ul li.yinlianLi02{text-align:center;border:solid 1px #e8e8e8;}
+div.yinlian ul li.dianji{ background:url(../images/zhifu/gou.png) no-repeat right center; border:solid 1px #fb8c43;}
+div.yinlian ul span img{padding:10px 5px;cursor:pointer;}
+div.yinlian ul li.yinlianLi03{ width:100px; height:30px; line-height:30px;letter-spacing:4px; font-family:"微软雅黑"; font-size:16px; text-align:center; color:#ffffff; background:#fb8c43;border-radius: 3px 3px 3px 3px; padding:0px; margin-left:100px;}
+div.yinlian ul li.yinlianLi03:hover{ background:#F60;}
+/*银联END*/
+
+/*支付宝*/
+div.zhifubao{height:250px; padding-top:50px;margin:0 auto;display:none;}
+div.zhifubao01{ background:url(../images/zhifu/zhifubao.png) no-repeat right -10px; height:250px; width:350px; padding-right:300px;margin:0 auto;}
+div.zhifubao02{ background:url(../images/zhifu/zhifubaoxian.png) no-repeat center center; height:250px; width:250px;}
+div.zhifubao02 img{margin-top:15px; margin-left:25px;}
+/*支付宝END*/
+
+/*微信*/
+div.weixin{height:250px; padding-top:50px;margin:0 auto;display:none;}
+div.weixin01{ background:url(../images/zhifu/weixin.png) no-repeat right -10px; height:250px; width:350px; padding-right:300px;margin:0 auto;}
+div.weixin02{ background:url(../images/zhifu/weixinxian.png) no-repeat center center; height:250px; width:250px;}
+div.weixin02 img{margin-top:13px; margin-left:28px;}
+/*微信END*/
+
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

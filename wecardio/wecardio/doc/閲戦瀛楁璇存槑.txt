@@ -1,0 +1,9 @@
+机构分成后实际金额或未提现的金额:(Java属性：OrganizationWallet.realTotal, 数据库表字段：organization_wallet.real_total)
+1. 机构第一次激活钱包时，会初始化此字段值 为 0
+2. 提现流程中，会更新此字段,计算公式：organization_wallet.real_total = organization_wallet.real_total - 提现金额(t_out_info.out_money)
+3. 购买服务套餐时更新此字段，计算公式：organization_wallet.real_total = organization_wallet.real_total + (套餐价格 * organization.rate机构分成比例)
+
+机构累计分成总金额(Java属性：OrganizationWallet.grandTotal, 数据库表字段：organization_wallet.grand_total)
+1. 机构第一次激活钱包时，会初始化此字段值 为 0
+2. 提现流程中，会更新此字段,计算公式：organization_wallet.grand_total = organization_wallet.grand_total + 提现金额(t_out_info.out_money)
+3. 购买服务套餐时更新此字段，计算公式：organization_wallet.real_total = organization_wallet.real_total + (套餐价格 * organization.rate机构分成比例)

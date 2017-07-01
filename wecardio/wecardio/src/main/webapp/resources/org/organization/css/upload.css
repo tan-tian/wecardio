@@ -1,0 +1,66 @@
+.addpicDiv .webuploader-pick {
+    background: none;
+}
+
+.addpicDiv .webuploader-pick {
+    height: 100px;
+    width: 168px;
+}
+
+div.file-panel {
+    position: absolute;
+    height: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80000000', endColorstr='#80000000')\0;
+    background: rgba( 0, 0, 0, 0.5 );
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 300;
+}
+
+div.file-panel span {
+    width: 24px;
+    height: 24px;
+    display: inline;
+    float: right;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../../../images/icons.png) no-repeat;
+    margin: 5px 1px 1px;
+    cursor: pointer;
+}
+
+div.file-panel span.rotateLeft {
+    background-position: 0 -24px;
+}
+div.file-panel span.rotateLeft:hover {
+    background-position: 0 0;
+}
+
+div.file-panel span.rotateRight {
+    background-position: -24px -24px;
+}
+div.file-panel span.rotateRight:hover {
+    background-position: -24px 0;
+}
+
+div.file-panel span.cancel {
+    background-position: -48px -24px;
+}
+div.file-panel span.cancel:hover {
+    background-position: -48px 0;
+}
+
+h1.addimgDiv p.error {
+    background: #f43838;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+}

@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**/
+html, body{  font-size:12px;  font-family:Tahoma "微软雅黑"; height:100%;background:#e8e8e8;}
+img { border:none;}
+ul li{list-style:none;}
+a{text-decoration:none;}
+a:hover {text-decoration:none;}
+table{ border:none;}
+tr{ border:none;}
+td{ border:none;}
+*{padding:0;margin:0;}
+
+.patient_purse{padding:20px 20px 10px 0;}
+
+/*头部信息*/
+div.purse_adressBar{clear:both; margin-bottom:10px;height:37px; line-height:37px; border-bottom:0px solid #c9d1dc; background:#f9f9f9; border-radius:3px; overflow:hidden;}
+a.adressBar1{height:37px; line-height:37px; float:left; margin-left:5px; padding-left:30px;color:#3c4349; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px; font-weight:bold;background:url(../images/ico_home16.png) no-repeat 7px 9px; cursor:pointer;}
+a.adressBar1:hover{ color:#000;}
+span.adressBar2{color: #a3a3a3;float: left;font-family: "微软雅黑";font-size: 12px;height: 37px;letter-spacing: 1px;line-height: 37px;margin: 0 5px;}
+span.arrowText{  color: #787677;float: left;font-family: "宋体";font-size: 12px;height: 37px;line-height: 37px;margin: 0 5px;}
+a.goback{ float:right; padding-left:16px; padding-right:10px;height:37px; line-height:37px; border-left:1px solid #e2e5e9;color:#a3a3a3; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px; cursor:pointer;}
+a.goback:hover{ background-color:#e0c21b; border-left:1px solid #c4a915; color:#fff;}
+
+/*账户信息*/
+/*div.purseXinxi{ background:#FFF; height:200px; margin:0 auto; clear:both; position:relative;}
+div.purseXinxi_pic{ position:absolute; left:0px; top:0px; width:200px; height:200px;}
+div.purseZhanghu{height:180px; float:left;position:absolute; left:250px; top:0px; padding-top:40px;}*/
+/*div.purseZhanghu table w{ width:100px; height:200px;}*/
+/*div.purseZhanghu table tr.purseZhanghu01{ width:600px; height:30px; margin-top:25px;font-size:12px; font-family:'微软雅黑';line-height:30px; letter-spacing:1px; }
+div.purseZhanghu table tr td{font-size:12px; font-family:'微软雅黑';line-height:30px; letter-spacing:1px; color:#999999; margin:5px 5px 5px 5px; text-align:left;}
+div.purseZhanghu table tr span.word01{ color:#222222;}*/
+/*td.word03{ padding-left:20px;}*/
+
+/*div.purseZhanghu table tr td span.word04{ width:80px; height:40px;font-size:28px;line-height:40px;letter-spacing:1px; color:#fb8c43; padding:5px 5px;  text-align:center;cursor:pointer;}
+div.purseZhanghu table tr td span.xuanze{ text-decoration:underline;}
+
+a.word02{ border: solid 1px #fb8c43; border-radius: 2px 2px 2px 2px; padding:5px; margin-left:10px;color:#222222;}
+a.word02:hover{ background:#fb8c43; border-radius: 2px 2px 2px 2px; padding:5px; margin-left:10px; color:#FFF;}
+
+a.word05{ width:100px; height:24px;font-size:16px;line-height:50px;letter-spacing:2px; color:#FFF; background:#fe8e15  ; padding:5px 8px 5px 8px; margin-left:30px;}
+a.word05:hover{background:#fd751f}
+a.word06{ width:100px; height:24px;font-size:16px;line-height:50px;letter-spacing:2px; color:#FFF; background:#fe8e15  ; padding:5px 8px 5px 8px; margin-left:30px;}
+a.word06:hover{background:#e95a00}*/
+
+
+div.purseXinxi{ background:#FFF; height:100px; margin:0 auto; clear:both; position:relative;}
+div.purseZhanghu{height:100px; font-family:"微软雅黑";}
+/*div.purseZhanghu table w{ width:100px; height:200px;}*/
+div.purseZhanghu table{ width:100%; border-collapse:collapse;}
+div.purseZhanghu table td{ border:0;}
+div.purseZhanghu table tr.purseZhanghu01{height:30px; margin-top:25px;font-size:12px; font-family:'微软雅黑';line-height:30px; letter-spacing:1px; }
+div.purseZhanghu table tr td{line-height:30px; letter-spacing:1px; color:#999999; text-align:left;}
+td.word03{ padding-left:20px;}
+
+span.word04{width:80px;font-size:28px;line-height:50px;letter-spacing:1px; color:#fb8c43; padding:0px 5px;  text-align:center;cursor:pointer;}
+
+a.word05{width:100px; height:24px;font-size:16px;line-height:50px;letter-spacing:2px; color:#FFF; background:#fe8e15; padding:5px 8px; }
+a.word05:hover{background:#fd751f}
+
+div.qianbaoDiv{overflow:hidden; cursor:pointer; color:#FFF; height:100px;text-align:center;letter-spacing:2px;}
+div.qianbaoDiv:hover{
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity:0.9;
+}
+.hongse{ background-color:#e47878;}
+.lanse{background-color: #62a6d6;}
+.lvse{background-color: #51c399;}
+div.fw{background:url(../images/ico_fuwu01.png) no-repeat left center; height:50px; width:150px; line-height:1px;font-size:16px;font-family:'微软雅黑'; margin:0 auto; padding:50px 0 0 50px;}
+div.xf{background:url(../images/ico_list01.png) no-repeat left center; height:50px; width:150px;line-height:1px;font-size:16px; font-family:'微软雅黑'; margin:0 auto;padding:50px 0 0 50px;}
+div.zf{background:url(../images/ico_money01.png) no-repeat left center;height:50px; width:150px;line-height:1px;font-size:16px; font-family:'微软雅黑'; margin:0 auto;padding:50px 0 0 50px;}
+div.zh{ color:#999; position:relative;}
+a.zfmima{ display:block; width:30px; height:30px; background:url(../images/setting24.png) no-repeat center center; cursor:pointer; position:absolute; top:3px; right:3px;}
+a.zfmima:hover{ background:url(../images/setting24.png) no-repeat center center #ffffba;}
+
+/*账户信息END*/
+
+/*头部信息END*/
+
+
+/*查询*/
+
+div.purseSearch{position:relative; left:0px;top:10px; clear:both; padding:7px 10px 10px; height:25px; line-height:25px; margin-bottom:10px;margin-top:10px; background:#fff repeat;}
+div.purseSearch_a{position:absolute; left:0px; width:100%;top:6px;}
+div.searchBtMain{ height:25px; float:right; padding-top:2px; padding-right:10px;}
+div.searchBtMain a{ margin:0 0px 0 15px; float:left; padding:0 20px; height:25px; line-height:25px; cursor:pointer;font-family:'微软雅黑'; letter-spacing:1px; font-size:12px; color:#fff;}
+a.subBt{ background:#ee983c;}
+a.subBt:hover{ background:#fd751f;}
+a.giveupBt{ background:#404144;}
+a.giveupBt:hover{ background:#333333;}
+
+/*-----------*/
+div.search_type{float:left;padding:8px 20px 0 20px; font-weight:bold; color:#30383B;font-family:'微软雅黑';}
+div.search_type select{ font-weight:normal;}
+div.search_div{ clear:both; overflow:hidden; border-bottom:1px solid #DDDDDD; padding:5px 0 10px 0; margin:0 5px;}
+div.search_div .search_type{ padding:12px 5px 0 15px;}
+
+div.dateDiv{ float:left;}
+a.jumpding{ cursor:pointer;}
+
+span.formText{ float:left; margin-right:10px; font-size:12px; height:21px; line-height:21px; font-weight:normal;letter-spacing:1px; font-family:'微软雅黑';}
+input.zjInput{height:20px; padding:4px; width:170px; line-height:20px; background:#fff;color:#757575;font-family:'微软雅黑'; font-size:12px;letter-spacing:1px; background:url(../images/ico_date.png) no-repeat right center #fff; border:1px solid #E6E6E6; border-radius:3px;}
+input.zjInput:hover{border:1px solid #BAC4CE;}
+
+
+/*查询END*/
+
+/*交易单列表*/
+div.purseDingdan{clear:both; margin-top:10px;position:relative; left:0px;top:20px; }
+div.purseDingdan_a{ /*position:absolute; left:0px;top:0px;*/width:100%;}
+div.purseDingdan_a table{border-radius: 3px 3px 3px 3px; background:#FFF; width:100%; border-collapse:collapse}
+div.purseDingdan_a table tr.tableTittle{ height:20px;font-family:'微软雅黑'; font-weight:bold; font-size:12px;line-height:20px; text-align:center; color:#4d4d4d;letter-spacing:3px; border-bottom:solid 1px #858484;}
+div.purseDingdan_a table tr td{ height:35px;font-family:'微软雅黑'; font-size:12px;font-weight:normal; text-align:center; color:#858484;letter-spacing:1px;border:none;}
+tr.dingdan01{background:#f1efef;height:20px;}
+div.purseDingdan_a table a{color:#858484;}
+div.purseDingdan_a table a:hover{ text-decoration:underline;color:#fb8c43;}
+/*.dingdanTime{ width:180px;}
+.dingdanType{ width:460px;}
+.dingdanMoney{ width:150px;}
+.dingdanNum{ width:180px;}*/
+
+
+/*交易列表*END/
+
+/*--------页码----------*/
+div.pageBar{ clear:both;height:25px; padding:5px 0; border-top:1px solid #ccc;/*position:relative; left:0px;top:410px;*/}
+.snPages{float:right;height:25px; padding-right:10px;}
+.snPages a,.snPages a:visited,.snPages span,.snPages div{position:relative;display:inline;float:left;margin-left:4px;color:#333;}
+.snPages span{margin:0 10px;}
+.snPages div{height:29px;line-height:26px;line-height:30px\9;+line-height:32px;_line-height:26px;margin-top:-1px;padding-left:30px;overflow:hidden;}
+.snPages a,.snPages a:visited{height:20px;line-height:20px;padding:0 8px;text-align:center;background:#fff;border:1px solid #d7d7d7;border-radius:4px 4px 4px 4px;}
+.snPages a.current{color:#f60;}
+.snPages a.prev,.snPages a.next,.snPages a.prev,.snPages a.next:visited{width:20px;height:20px;line-height:20px;line-height:28px\9;_line-height:24px;padding:0;overflow:hidden;}
+.snPages a.prev,.snPages span.prev{text-indent:6px;}
+.snPages a.next,.snPages span.next{margin-left:4px;text-indent:-6px;}
+.snPages span.prev,.snPages span.next{display:inline;float:left;width:20px;height:20px;line-height:20px;line-height:28px\9;_line-height:24px;margin:0;overflow:hidden;color:#b1b1b1;text-align:center;background:#fff;border:1px solid #d7d7d7;border-radius:4px 4px 4px 4px;}
+.snPages span.prev{+margin-right:4px;_margin-right:0;}
+.snPages span.next{margin-left:4px;}
+.snPages b{position:absolute;width:0;height:0;line-height:0;margin-top:-2px;+margin-top:-3px;font-size:0;border-width:5px;border-style:solid;border-color:#fff #333 #fff #fff;}
+.snPages a.prev b{left:1px;top:8px;}
+.snPages a.next b{right:1px;top:8px;border-color:#fff #fff #fff #333;}
+.snPages span.prev b{left:1px;top:8px;border-color:#fff #b1b1b1 #fff #fff;}
+.snPages span.next b{right:1px;top:10px;border-color:#fff #fff #fff #b1b1b1;}
+.snPages div input{+position:relative;+top:-2px;_top:-1px;+left:3px;width:32px;height:20px;line-height:20px;margin:0 3px;overflow:hidden;text-align:center;+vertical-align:middle;border:1px solid #d7d7d7;}
+.snPages div input.pagesubmit{position:relative; float:right; margin-top:2px; display:inline;cursor:pointer;width:45px;height:20px;line-height:20px;line-height:20px\9;+line-height:20px;_line-height:20px;overflow:hidden;background:url(images/common.png) no-repeat 0 0;border-radius:4px 4px 4px 4px;}
+.snPages div input.pagesubmit:hover{color:#f60;text-decoration:underline;}
+.snPages a:hover{color:#f60;}
+
+/*------------------*/

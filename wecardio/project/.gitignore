@@ -1,0 +1,22 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+/webapp/WEB-INF/classes/
+target/
+
+# logs
+*.log
+
+# Eclipse
+.classpath
+.project
+
+# IDEA
+*.iml
+*.ipr
+*.iws
+.idea/

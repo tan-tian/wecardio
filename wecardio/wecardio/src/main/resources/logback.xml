@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration debug="false" scan="true" scanPeriod="20 seconds">
+    <property name="appName" value="wecardio"/>
+    <property name="datefmt" value="yyyy-MM-dd HH:mm:ss.SSS"/>
+    <property name="backup" value="./log/%d{yyyy-MM-dd}" /><!-- 日志备份目录 -->
+    <property name="pattern_fmt"
+              value="%d{${datefmt}} [%thread] %-5level %logger - [%X{loginUserName}] %msg%n" />
+    <contextName>${appName}</contextName>
+    <!-- 控制台 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${pattern_fmt}</pattern>
+        </encoder>
+    </appender>
+    <!-- 日志 appender  -->
+    <appender name="FILE_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./log/${appName}-${username}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${backup}/log%d{yyyy-MM-dd}-%i.log.zip</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <MaxFileSize>100MB</MaxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${pattern_fmt}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 访问日志 appender  -->
+    <appender name="FILE_ACCESS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./log/${appName}-${username}-access.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${backup}/log%d{yyyy-MM-dd}-access-%i.log.zip</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <MaxFileSize>100MB</MaxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${pattern_fmt}</pattern>
+        </encoder>
+    </appender>
+    <!-- 数据库访问日志 appender  -->
+    <appender name="FILE_SQL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./log/${appName}-${username}-sql.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${backup}/log%d{yyyy-MM-dd}-sql-%i.log.zip</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <MaxFileSize>100MB</MaxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${pattern_fmt}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 异步文件输出 -->
+    <appender name="async" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>512</queueSize>
+        <!-- 添加附加的appender,最多只能添加一个 -->
+        <appender-ref ref="FILE_LOG" />
+    </appender>
+
+    <!--<appender name="db" class="ch.qos.logback.classic.db.DBAppender">-->
+        <!--<connectionSource class="ch.qos.logback.core.db.DataSourceConnectionSource">-->
+            <!--<dataSource class="com.alibaba.druid.pool.DruidDataSource">-->
+                <!--<url>${filter.jdbc.url}</url>-->
+                <!--<username>${filter.jdbc.username}</username>-->
+                <!--<password>${filter.jdbc.password}</password>-->
+            <!--</dataSource>-->
+        <!--</connectionSource>-->
+    <!--</appender>-->
+
+    <appender name="CYCLIC"
+              class="com.borsam.pojo.log.ExtCyclicBufferAppender">
+        <MaxSize>512</MaxSize>
+    </appender>
+
+    <!--访问日志-->
+    <logger name="web-access" level="debug" additivity="false">
+        <appender-ref ref="FILE_ACCESS"/>
+        <appender-ref ref="CYCLIC"/>
+    </logger>
+
+    <!--sql-->
+    <logger name="druid.sql" level="${log4j.logger.druid.sql}" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE_SQL"/>
+        <appender-ref ref="CYCLIC"/>
+    </logger>
+
+
+    <logger name="druid.sql.DataSource" level="${log4j.logger.druid.sql.DataSource}" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE_SQL"/>
+        <appender-ref ref="CYCLIC"/>
+    </logger>
+
+    <logger name="druid.sql.Connection" level="${log4j.logger.druid.sql.Connection}" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE_SQL"/>
+        <appender-ref ref="CYCLIC"/>
+    </logger>
+
+    <logger name="druid.sql.Statement" level="${log4j.logger.druid.sql.Statement}" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE_SQL"/>
+        <appender-ref ref="CYCLIC"/>
+    </logger>
+
+    <logger name="druid.sql.ResultSet" level="${log4j.logger.druid.sql.ResultSet}" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE_SQL"/>
+        <appender-ref ref="CYCLIC"/>
+    </logger>
+
+    <root level="${log4j.rootLogger}">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE_LOG" />
+        <appender-ref ref="CYCLIC"/>
+    </root>
+
+</configuration>
+
+
+

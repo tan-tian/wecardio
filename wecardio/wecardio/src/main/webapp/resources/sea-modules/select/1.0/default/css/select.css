@@ -1,0 +1,145 @@
+
+/*--------搜索下拉查询---------*/
+div.searchBar {
+    clear: both;
+    padding: 6px 0 4px;
+    height: 40px;
+    border-bottom: 1px dotted #DDDDDD;
+}
+
+span.spanName {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    width: 85px;
+    font-size: 12px;
+    color: #30383B;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;overflow:hidden;
+}
+
+div.mohusearch {
+    float: left;
+    background: #fff;
+    height: 20px;
+    border: 1px solid #E6E6E6;
+    margin-top: 6px;
+    position: relative;
+    margin-left: 0px;
+}
+
+div.mohusearch:hover {
+    border: 1px solid #BAC4CE;
+}
+
+div.mohusearch span.searchSimpleInputb {
+    border: 0;
+    float: left;
+    height: 24px;
+    width: 137px;
+    line-height: 24px;
+    padding-left: 5px;
+    color: #757575;
+    font-family: '微软雅黑';
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+div.mohusearch input.searchSimpleInputb {
+    border: 0;
+    float: left;
+    height: 20px;
+    width: 200px;
+    line-height: 20px;
+    padding-left: 5px;
+    color: #757575;
+    font-family: '微软雅黑';
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+div.mohusearch a.searchSubb {
+    float: left;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    background: url(../images/hasddArrow.png) no-repeat center 11px;
+}
+
+div.searchSimple {
+    height: 24px;
+    border: 1px solid #CCCCCC;
+    float: right;
+    margin-top: 6px;
+}
+
+div.searchSimple input.searchSimpleInput {
+    border: 0;
+    float: left;
+    height: 24px;
+    width: 137px;
+    line-height: 24px;
+    padding-left: 0px;
+    color: #757575;
+    font-family: '微软雅黑';
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+div.searchSimple a.searchSub {
+    float: left;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    background: url(../images/searcha.jpg) no-repeat center -2px;
+    border-left: 1px solid #CCCCCC;
+}
+
+div.searchSimple a:hover, div.searchSimple a.searchSub:hover {
+    background: url(../images/searcha.jpg) no-repeat center -32px;
+}
+
+div.searchDoult {
+    position: absolute;
+    top: 24px;
+    left: -1px;
+    z-index: 99999;
+    width: 219px;
+    border: 1px solid #d6d6d6;
+    padding: 5px;
+    overflow: hidden;
+    background: #f9f9f9;
+    display: none;
+}
+
+div.jieguo {
+    z-index: 99999;
+    clear: both;
+    max-height: 180px;
+    width: 215px;
+    overflow: auto;
+    padding: 0px;
+    margin-top: 5px;
+    float: left;
+}
+
+ul.jieguolist li {
+    clear: both;
+    line-height: 24px;
+    border-bottom: 1px dotted #d6d6d6;
+    text-align: left;
+    color: #5d5d5d;
+    cursor: pointer;
+    text-indent: 12px;
+}
+
+ul.jieguolist li:hover {
+    background: #F5F5F5;
+}
+
+/*--------搜索下拉查询END---------*/

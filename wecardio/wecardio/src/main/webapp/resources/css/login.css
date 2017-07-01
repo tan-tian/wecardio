@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body{  font-size:12px;  font-family:Tahoma 幼圆; height:100%; position:relative;}
+body {scrollbar-face-color:#DEF;scrollbar-highlight-color:#FFF;scrollbar-shadow-color:#9BC;scrollbar-3dlight-color:#ACD;scrollbar-arrow-color:#68A;scrollbar-track-color:#EEE;scroll:#DEF;}
+body{ background:#fff;}
+*{padding:0; margin:0 auto;}
+img { border:none;}
+ul{list-style:none;}
+a{text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {star:expression(this.onFocus=this.blur());}
+body input{ background:transparent; border:medium none; border:0px; color:#bcbcbc; vertical-align:middle;font-family:'微软雅黑'; letter-spacing:1px;}
+
+
+/**/
+div.loginDiv{clear:both; position:absolute; left:0px; top:0px; width:100%;}
+/*头部*/
+div.loginTop{ clear:both;height:80px; width:1120px;}
+div.logo{height:80px; line-height:80px; padding-left:280px;
+    font-family:'微软雅黑'; font-size:20px; color:#3c3c3c; letter-spacing:2px;
+    background:url(../images/loginlogo.png) no-repeat 0 center;}
+/*头部END*/
+
+/*中部*/
+
+div.loginCenter{ clear:both;height:576px; background:#fff; border-top:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc;}
+div.loginMainCenter{width:370px; height:507px; margin:0 auto; padding-left:750px; background:url(../images/un2.png) no-repeat 50px 50px;padding-top:50px}
+div.loginMainCenterBox{ padding:15px 20px 20px; margin-top:30px; background:#fff; border-radius:3px; overflow:hidden; border:1px solid #dcdcdc;}
+
+div.tittle{ clear:both;height:30px; border-bottom:1px solid #dcdcdc;}
+div.tittle h1{ float:left;height:30px; line-height:30px;padding:0 10px;
+    font-family:'微软雅黑'; font-size:12px; color:#666; font-weight:normal;letter-spacing:1px;}
+a.zhuce{height:30px; line-height:38px; float:right; padding-right:10px;
+    color:#999;font-family:'微软雅黑';font-size:12px;letter-spacing:1px;}
+a.zhuce:hover{ color:#666;}
+ul.mainUl{ clear:both; padding:10px 0 0;}
+ul.mainUl li.inputLi{ clear:both;height:40px; line-height:40px; margin-bottom:5px;
+    border:1px solid #dcdcdc;border-radius: 3px;}
+ul.mainUl li.inputLi input{height:40px;line-height:40px; padding-left:10px; width:310px;
+    font-family:'微软雅黑'; font-size:14px; color:#999;}
+.liText{clear:both;height:30px; line-height:30px; padding-left:10px;
+    color:#666;font-family:'微软雅黑';font-size:12px;letter-spacing:1px; text-align:left; font-weight:bold;}
+
+
+li.mainUl1{/*background-image:url(../images/yonghu1.png);*/ }
+li.mainUl2{/*background-image:url(../images/mima1.png);*/ }
+li.mainUl3{ /*background-image:url(../images/yanzhengma1.png);*/ }
+li.mainUl3 img{margin-top:5px;}
+li.mainUl4{ height:35px; clear:both; padding:10px 0 0;}
+a.mainUlLink1 { margin-left:10px;background:url(../images/checkbox.png) no-repeat scroll left 3px;color: #999;cursor: pointer; float: left;font-family: '微软雅黑';font-size: 14px; letter-spacing: 2px; padding-left: 20px;}
+li.mainUl4 .dianji{background:url(../images/checkboxed.png) no-repeat scroll left 3px;color:#F60;}
+/*li.mainUl4 .huaguo{background:url(../images/gou2.png) no-repeat scroll left center;color:#F93;}*/
+a.mainUlLink2{float: right;font-family: '微软雅黑';font-size: 14px; letter-spacing: 2px;color:#b6b6b6;text-decoration:none;}
+li.mainUl4 a.mainUlLink2:hover{color:#F60; text-decoration:none;}
+li.mainUlLink span{ float:right;}
+ul li img{ float:left;}
+div.loginMainCenter ul li span{float:left; font-family:'微软雅黑'; font-size:14px; color:#FFF}
+
+a.mainLink{height:40px;line-height:40px;clear:both;display: block;
+    color: #FFFFFF;cursor: pointer;font-family: '微软雅黑';font-size:16px;text-align: center;text-decoration:none;
+    background:#00a2ca;border-bottom: 3px solid #0198bd;border-radius: 3px 3px 3px 3px;}
+a.mainLink:hover{background:#0995b8;border-bottom: 3px solid  #0a83a1; text-decoration:none;}
+
+div.choseRole{ padding:0 20px 0 10px; height:40px; position:relative;}
+div.choseRole h1{height:40px; line-height:40px;cursor:pointer;
+    font-family:'微软雅黑'; letter-spacing:1px; font-size:14px; font-weight:normal; color:#b6b6b6;
+    background:url(../images/ico_expand.png) no-repeat right center;}
+ul.choseRoleList{ position:absolute; right:0px; top:39px; width:307px; padding:10px; background:#f3f3f3; border-radius:0 0 3px 3px; display:none;}
+ul.choseRoleList li{ clear:both; height:28px; line-height:28px; padding:0 5px; border-bottom:1px dotted #ddd; cursor:pointer;
+    font-family:'微软雅黑'; letter-spacing:1px; font-size:14px; font-weight:normal; color:#666;}
+ul.choseRoleList li:hover{ background-color:#efefef;}
+/*中部END*/
+
+
+
+
+/*底部*/
+
+div.bottom{ clear:both; height:20px; padding-top:20px;}
+div.bottom div{font-family:'微软雅黑'; font-size:12px; color:#b3b3b3;}
+div.bottomCenter{ width:1080px; margin:0 auto;
+    font-family:'微软雅黑'; font-size:12px; color:#999; text-align:center; letter-spacing:2px;}
+div.bottomLeft{ float:left;}
+div.bottomRight{ float:right;}
+
+/*底部END*/

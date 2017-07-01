@@ -1,0 +1,542 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.borsam</groupId>
+    <artifactId>wecardio</artifactId>
+    <packaging>war</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>wecardio Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <properties>
+        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+        <common.version>0.0.1-SNAPSHOT</common.version>
+        <!-- 设置变量:用于统一管理Library的版本 -->
+        <junit.version>4.11</junit.version>
+        <log4j.version>1.2.17</log4j.version>
+        <net.sf.ehcache.version>2.6.8</net.sf.ehcache.version>
+        <org.slf4j.version>1.6.1</org.slf4j.version>
+        <mysql.jdbc.version>5.1.29</mysql.jdbc.version>
+        <org.hibernate.entitymanager.version>4.3.7.Final</org.hibernate.entitymanager.version>
+        <org.hibernate.core.version>4.3.7.Final</org.hibernate.core.version>
+        <org.hibernate.validator.version>5.0.3.Final</org.hibernate.validator.version>
+        <org.hibernate.search.version>3.4.2.Final</org.hibernate.search.version>
+        <org.hibernate.jpa.version>1.0.0.Final</org.hibernate.jpa.version>
+        <!--<org.springframework.version>3.2.8.RELEASE</org.springframework.version>-->
+        <org.springframework.version>4.1.4.RELEASE</org.springframework.version>
+        <commons.logging.version>1.1.3</commons.logging.version>
+        <commons.fileupload.version>1.3.1</commons.fileupload.version>
+        <commons.io.version>2.4</commons.io.version>
+        <commons.lang.version>2.6</commons.lang.version>
+        <commons.collections.version>3.2.1</commons.collections.version>
+        <commons.codec.version>1.9</commons.codec.version>
+        <org.apache.shiro.version>1.2.3</org.apache.shiro.version>
+        <com.alibaba.druid.version>1.0.13</com.alibaba.druid.version>
+        <com.octo.captcha.version>1.0-RC6</com.octo.captcha.version>
+        <org.freemarker.version>2.3.20</org.freemarker.version>
+        <jackson.version>2.3.2</jackson.version>
+        <jstl.version>1.2</jstl.version>
+        <org.aspectj.version>1.7.4</org.aspectj.version>
+        <org.codehaus.jackson.version>1.8.3</org.codehaus.jackson.version>
+        <com.jhlabs.filters.version>2.0.235-1</com.jhlabs.filters.version>
+        <org.apache.poi.version>3.10.1</org.apache.poi.version>
+        <org.apache.httpcomponents.version>4.3.5</org.apache.httpcomponents.version>
+        <!--xml-->
+        <com.thoughtworks.xstream.version>1.4.7</com.thoughtworks.xstream.version>
+        <!--template-->
+        <org.beetl-core.version>2.1.0</org.beetl-core.version>
+        <!--测试相关-->
+        <hamcrest.core.version>1.3</hamcrest.core.version>
+        <mockito.core.version>1.9.5</mockito.core.version>
+        <jsonpath.version>0.9.0</jsonpath.version>
+        <!--<spring.boot.version>0.5.0.BUILD-SNAPSHOT</spring.boot.version>-->
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.borsam</groupId>
+            <artifactId>common-project</artifactId>
+            <version>${common.version}</version>
+        </dependency>
+
+        <!-- junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- aspectj相关jar包-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${org.aspectj.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${org.aspectj.version}</version>
+        </dependency>
+
+        <!-- spring相关 -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>${hamcrest.core.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.core.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${jsonpath.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-oxm</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-messaging</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!-- hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${org.hibernate.entitymanager.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${org.hibernate.core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${org.hibernate.validator.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search</artifactId>
+            <version>${org.hibernate.search.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>${org.hibernate.jpa.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons.fileupload.version}</version>
+        </dependency>
+
+        <!-- shiro相关 -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-ehcache</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <!-- shiro-cas -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-cas</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <!-- ehcache -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-core</artifactId>
+            <version>${net.sf.ehcache.version}</version>
+        </dependency>
+
+        <!-- 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${com.alibaba.druid.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.jdbc.version}</version>
+        </dependency>
+
+        <!-- jstl -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+
+        <!-- 其他 -->
+        <dependency>
+            <groupId>net.sourceforge.pjl-comp-filter</groupId>
+            <artifactId>pjl-comp-filter</artifactId>
+            <version>1.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>bouncycastle</groupId>
+            <artifactId>bcprov-jdk15</artifactId>
+            <version>140</version>
+        </dependency>
+
+        <!-- flexPaper -->
+        <dependency>
+            <groupId>jakarta-regexp</groupId>
+            <artifactId>jakarta-regexp</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <!-- POI -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${org.apache.poi.version}</version>
+        </dependency>
+
+        <!--http-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${org.apache.httpcomponents.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>${org.apache.httpcomponents.version}</version>
+        </dependency>
+        <!--xml -->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>${com.thoughtworks.xstream.version}</version>
+        </dependency>
+
+        <!--微信-->
+        <dependency>
+            <groupId>me.chanjar</groupId>
+            <artifactId>weixin-java-mp</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+
+        <!--template-->
+        <dependency>
+            <groupId>org.beetl</groupId>
+            <artifactId>beetl-core</artifactId>
+            <version>${org.beetl-core.version}</version>
+        </dependency>
+
+        <!--region provided级别-->
+
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>2.2.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty.orbit</groupId>
+            <artifactId>javax.servlet.jsp</artifactId>
+            <version>2.2.0.v201112011158</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.3</version>
+        </dependency>
+
+
+        <!--endregion-->
+
+    </dependencies>
+    <build>
+        <finalName>wecardio</finalName>
+        <filters>
+            <filter>${project.basedir}/src/main/resources/filters/${env}.properties</filter>
+        </filters>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/java</directory>
+                <includes>
+                    <include>**/*.jpg</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.jpg</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
+        <directory>${project.basedir}/target</directory>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.2.11.v20150529</version>
+                <configuration>
+                    <stopKey>stop</stopKey>
+                    <stopPort>5599</stopPort>
+                    <webAppConfig>
+                        <contextPath>/wecardio</contextPath>
+                        <defaultsDescriptor>src/main/resources/webdefault.xml</defaultsDescriptor>
+                    </webAppConfig>
+                    <scanIntervalSeconds>0</scanIntervalSeconds>
+                    <contextXml>${project.basedir}/src/main/resources/jetty-context.xml</contextXml>
+                    <httpConnector>
+                        <port>80</port>
+                    </httpConnector>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+   			 <groupId>org.apache.tomcat.maven</groupId>
+    			<artifactId>tomcat7-maven-plugin</artifactId>
+   				 <version>2.1</version>
+    			<configuration>
+        		<url>http://localhost:8080/manager/text</url>
+       			 <server>tomcat7</server> 
+       			 <path>/wecardio</path> 
+   				 </configuration>
+			</plugin>
+			
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env>prod</env>
+            </properties>
+        </profile>
+        <!-- 初始化数据库 -->
+        <profile>
+            <id>init-db</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.dbunit</groupId>
+                    <artifactId>dbunit</artifactId>
+                    <version>2.4.8</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi</artifactId>
+                    <!--<version>${org.apache.poi.version}</version>-->
+                    <version>3.2-FINAL</version>
+                </dependency>
+            </dependencies>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>1.7</version>
+                        <configuration>
+                            <target>
+                                <!-- mysql -->
+                                <property name="dbunit.datatype" value="org.dbunit.ext.mysql.MySqlDataTypeFactory"/>
+                                <!-- oracle
+                                <property name="dbunit.datatype" value="org.dbunit.ext.oracle.Oracle10DataTypeFactory" /> -->
+
+                                <!-- mssql
+                                <property name="dbunit.datatype" value="org.dbunit.ext.mssql.MsSqlDataTypeFactory" /> -->
+
+                                <property file="${project.basedir}/src/main/resources/filters/dev.properties"/>
+                                <sql driver="${filter.jdbc.driver}"
+                                     url="${filter.jdbc.url}&amp;sessionVariables=foreign_key_checks=0&amp;characterEncoding=UTF-8"
+                                     userid="${filter.jdbc.username}"
+                                     password="${filter.jdbc.password}"
+                                     onerror="continue" encoding="${project.build.sourceEncoding}">
+                                    <classpath refid="maven.test.classpath"/>
+                                    <transaction src="db/mysql/delete.sql"/>
+                                    <!--<transaction src="db/mysql/delBisData.sql"/>-->
+                                </sql>
+
+                                <taskdef name="dbunit" classname="org.dbunit.ant.DbUnitTask"
+                                         classpathref="maven.test.classpath"/>
+
+                                <!-- mysql、mssql -->
+                                <dbunit driver="${filter.jdbc.driver}"
+                                        url="${filter.jdbc.url}&amp;sessionVariables=foreign_key_checks=0&amp;characterEncoding=UTF-8"
+                                        userid="${filter.jdbc.username}"
+                                        password="${filter.jdbc.password}">
+
+                                    <!-- oracle
+                                    <dbunit driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
+                                        schema="${jdbc.username}" > -->
+
+                                    <dbconfig>
+                                        <property name="datatypeFactory" value="${dbunit.datatype}"/>
+                                    </dbconfig>
+                                    <classpath refid="maven.test.classpath"/>
+                                    <operation type="INSERT" src="db/mysql/data.xls" format="xls" transaction="true"/>
+                                    <!--<operation type="INSERT" src="db/mysql/bisData.xls" format="xls" transaction="true"/>-->
+
+                                </dbunit>
+
+                            </target>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+div.invitation{ padding:20px 20px 20px 0; }
+div.invitationMain{ background:#FFF; margin-top:15px;min-height:640px;}
+div.invitationLiebiao{ padding:30px 250px;}
+div.invitationSearch{padding:80px 30px 0px 100px;margin:0 auto;}
+div.invitationSearch table{ width:100%; margin:0 auto;}
+div.invitationSearch table tr{font-family:"微软雅黑"; font-size:12px;}
+div.invitationSearch table tr th{  text-align:right; font-weight:normal; letter-spacing:1px;}
+div.invitationSearch table tr td{}
+div.invitationSearch table tr td input{ height:27px; width:500px; font-family:"微软雅黑"; font-size:12px; line-height:28px; color:#999999; border:solid 1px #e8e8e8; float:left;}
+div.invitationSearch table tr td a{ background:url(../images/searchbtbg.jpg) no-repeat right center; width:30px; height:27px; cursor:pointer; border:1px solid #e6e6e6; float:left;}
+
+div.yaoqing{ height:20px;background:#fe8e15;font-family:"微软雅黑"; font-size:16px;line-height:20px; text-align:center; color:#FFF; margin:0 auto; padding:5px 0px;}
+div.yaoqing:hover{ background:#fd751f;}
+
+/*列表*/
+.doctorTable{ width:50%; border-collapse:collapse;}
+.doctorTable td.doctorTd,.doctorTable th.doctorTh{vertical-align:top; width:20%;}
+.doctorTable th.doctorTh{ text-align:left; font-weight:normal;}
+.doctorTable td.doctorTd{ border:solid 1px #e8e8e8;}
+div.huanzheDiv{overflow:hidden; background:#fff; position:relative; cursor:pointer;}
+/*div.huanzheDiv:hover{ background:#fef9c2;}*/
+div.huanzheDiv a.filecheckbox{ margin-top:0px; display:none;width:24px;height:24px; position:absolute; top:0px; left:0px;z-index:9;
+background:url(../images/checkbox.png) no-repeat center center; cursor:pointer;}
+div.huanzheDiv:hover a.filecheckbox{ display:block;background:url(../images/checkbox.png) no-repeat center center;}
+td.doctorTd div.huanzheDiv a.checked{ display:block; background:url(../images/checkboxho.png) no-repeat center center #dfc94e;} 
+div.huanzheDiv h1{ position:absolute; left:8px; top:8px; width:70px; height:70px;}
+div.huanzheDiv h1 img{width:70px; height:70px; border-radius:70px;}
+ul.usermsg{ clear:both; padding-left:85px; padding-top:5px; height:80px;}
+div.huanzheDiv .hasbind{ background:url(../images/done57.png) no-repeat right -15px ;}
+ul.usermsg li{ clear:both; height:18px; line-height:18px;
+color:#999; font-size:12px; font-family:'微软雅黑'; letter-spacing:1px;}
+ul.usermsg li b{ margin:0 5px; color:#333;}
+div.bingshi{ border-top:1px solid #ddd; background:#f8f8f8; padding:5px 0px; overflow:hidden; height:46px;}
+div.bingshi span{ float:left; height:20px; line-height:20px;padding:0 10px;color:#999; font-size:12px; font-family:'微软雅黑';letter-spacing:1px;}
+div.bingshi a{ float:left; height:20px; line-height:20px; padding:0 10px; margin:0 0px 5px 5px;color:#fff; font-size:12px;font-family:'微软雅黑'; letter-spacing:1px;background:#c4af4c; border-radius:4px;};

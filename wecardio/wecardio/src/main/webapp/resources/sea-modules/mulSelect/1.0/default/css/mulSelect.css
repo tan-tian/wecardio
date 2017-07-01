@@ -1,0 +1,146 @@
+/*@charset "utf-8";*/
+/*/!* CSS Document *!/*/
+/*body {*/
+    /*scrollbar-face-color: #DEF;*/
+    /*scrollbar-highlight-color: #FFF;*/
+    /*scrollbar-shadow-color: #9BC;*/
+    /*scrollbar-3dlight-color: #ACD;*/
+    /*scrollbar-arrow-color: #68A;*/
+    /*scrollbar-track-color: #EEE;*/
+    /*scrollbar-darkshadow-color: #DEF;*/
+    /*font: '微软雅黑', Arial, Helvetica, sans-serif;*/
+    /*font-size: 12px;*/
+/*}*/
+
+/** {*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
+
+/*a {*/
+    /*text-decoration: none;*/
+    /*color: #000;*/
+    /*outline: none;*/
+/*}*/
+
+/*a:active {*/
+    /*outline: none;*/
+    /*star: expression(this.onFocus=this.blur());*/
+/*}*/
+
+/*img {*/
+    /*border: none;*/
+/*}*/
+
+/*ul {*/
+    /*list-style: none;*/
+/*}*/
+
+div.searchFormChose {
+    padding: 0 5px 5px;
+}
+
+div.searchFormChose dl {
+}
+
+div.searchFormChose dl {
+    border-bottom: 1px dotted #DDDDDD;
+    margin: 0 5px;
+    overflow: hidden;
+    padding: 6px 0 4px;
+}
+
+div.searchFormChose dt {
+    float: left;
+    line-height: 25px;
+    text-align: right;
+    width: 80px;
+    font-size: 12px;
+    color: #30383B;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+div.searchFormChose dd {
+}
+
+div.searchFormChose dd {
+    overflow: hidden;
+    position: relative;
+}
+
+div.searchFormChose dd div {
+    float: left;
+    height: 20px;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+div.searchFormChose dd a {
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #15477e;
+    padding: 2px 5px;
+    font-family: '微软雅黑';
+}
+
+div.searchFormChose dd a.curr, div.searchFormChose dd a:hover {
+    background: none repeat scroll 0 0 #0f70b5;
+    color: #FFFFFF;
+}
+
+/*-------*/
+
+div.searchFormChose dd div.radioMain {
+    height: 31px;
+}
+
+div.searchFormChose dd a.icon_radio {
+    height: 17px;
+}
+
+div.searchFormChose dd a.icon_radio:hover {
+    background: url(../images/radio.jpg) no-repeat center -21px;
+}
+
+/*-------*/
+div.searchFormChose div.sel {
+    border: 1px solid #fff;
+    background: #fff;
+    height: 14px;
+    line-height: 14px;
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+div.searchFormChose div.sel:hover {
+    border: 1px solid #0F70B5;
+}
+
+/*div.searchFormChose div.sel:hover i{bottom: -1px;display: block;height: 13px;overflow: hidden;position: absolute;right: -1px;width: 13px;
+background:url(../images/x_spr.png) no-repeat -280px 0;}*/
+div.searchFormChose div.sel a:hover {
+    background: none;
+    color: #005AA0;
+}
+
+div.searchFormChose div.selected {
+    border: 1px solid #0F70B5;
+}
+
+div.searchFormChose div.selected i {
+    bottom: -1px;
+    display: block;
+    height: 13px;
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+    width: 13px;
+    background: url(../images/x_spr.png) no-repeat -280px 0;
+}

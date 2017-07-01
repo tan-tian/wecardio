@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+	updateCheck="false">
+
+	<diskStore path="${java.io.tmpdir}/${system.project_name}/cache" />
+
+	<cache name="menus" maxElementsInMemory="100" timeToLiveSeconds="3600"
+		eternal="false" overflowToDisk="false" />
+	<cache name="enums" maxElementsInMemory="100" timeToLiveSeconds="3600"
+		eternal="false" overflowToDisk="false" />
+	<cache name="authorization" maxElementsInMemory="100"
+		timeToLiveSeconds="3600" eternal="false" overflowToDisk="false" />
+	<cache name="propertiesListCache" maxElementsInMemory="100"
+		timeToLiveSeconds="3600" eternal="false" overflowToDisk="false" />
+
+	<cache name="homeCountCache" maxElementsInMemory="100"
+		timeToLiveSeconds="3600" eternal="false" overflowToDisk="false" />
+
+</ehcache>
