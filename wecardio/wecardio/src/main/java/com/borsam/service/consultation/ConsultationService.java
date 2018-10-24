@@ -6,7 +6,7 @@ import com.hiteam.common.base.service.BaseService;
 
 /**
  * Service - 会诊申请
- * Created by Sebarswee on 2015/7/24.
+ * Created by tantian on 2015/7/24.
  */
 public interface ConsultationService extends BaseService<Consultation, Long> {
 

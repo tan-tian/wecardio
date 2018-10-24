@@ -5,7 +5,7 @@ import com.hiteam.common.base.repository.dao.BaseDao;
 
 /**
  * Dao - 平台管理员账号
- * Created by Sebarswee on 2015/6/19.
+ * Created by tantian on 2015/6/19.
  */
 public interface AdminDao extends BaseDao<Admin, Long> {
 

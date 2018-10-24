@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/8/5.
+ * Created by tantian on 2015/8/5.
  */
 seajs.use(['msgBox', 'validate'], function (msgBox) {
     $(document).ready(function () {

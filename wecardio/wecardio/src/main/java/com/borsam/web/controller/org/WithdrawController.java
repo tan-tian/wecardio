@@ -30,7 +30,7 @@ import java.util.*;
 
 /**
  * Controller - 提现管理
- * Created by Sebarswee on 2015/8/17.
+ * Created by tantian on 2015/8/17.
  */
 @Controller("orgWithdrawController")
 @RequestMapping(value = "/org/withdraw")

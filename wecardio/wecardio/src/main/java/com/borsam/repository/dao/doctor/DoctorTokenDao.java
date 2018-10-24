@@ -5,7 +5,7 @@ import com.hiteam.common.base.repository.dao.BaseDao;
 
 /**
  * Dao - 医生Token
- * Created by Sebarswee on 2015/6/27.
+ * Created by tantian on 2015/6/27.
  */
 public interface DoctorTokenDao extends BaseDao<DoctorToken, Long> {
 }

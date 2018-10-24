@@ -32,7 +32,7 @@ import com.hiteam.common.web.I18Util;
 
 /**
  * Entity 设备操作记录表 
- * @author Tony 2016/03/17
+ * @author tantian 2016/03/17
  *
  */
 

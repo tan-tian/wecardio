@@ -30,7 +30,7 @@ import java.util.Map;
 
 /**
  * Controller - 支付
- * Created by Sebarswee on 2015/8/6.
+ * Created by tantian on 2015/8/6.
  */
 @Controller("patientPaymentController")
 @RequestMapping("/patient/payment")

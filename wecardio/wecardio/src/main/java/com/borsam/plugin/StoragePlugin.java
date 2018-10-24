@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * Plugin - 存储
- * Created by Sebarswee on 2015/6/30.
+ * Created by tantian on 2015/6/30.
  */
 public abstract class StoragePlugin implements Comparable<StoragePlugin> {
 

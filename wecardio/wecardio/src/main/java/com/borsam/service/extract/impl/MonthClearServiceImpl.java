@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * Service - 月结信息
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Service("monthClearServiceImpl")
 public class MonthClearServiceImpl extends BaseServiceImpl<MonthClear, Long> implements MonthClearService {

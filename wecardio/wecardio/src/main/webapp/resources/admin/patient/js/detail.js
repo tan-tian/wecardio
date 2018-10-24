@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/7/14.
+ * Created by tantian on 2015/7/14.
  */
 seajs.use(['msgBox', 'pageBar', 'jTemplates', 'util', 'template'], function (msgBox, pageBar, jTemplates, util, template) {
     var chartCache = {};

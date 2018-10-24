@@ -10,7 +10,7 @@ import com.hiteam.common.base.repository.dao.BaseDao;
 /**
  * <pre>
  * @Description:
- * @author :Zhang zhongtao
+ * @author :tantian
  * @version: Ver 1.0
  * @Date: 2015-08-06 14:58
  * </pre>

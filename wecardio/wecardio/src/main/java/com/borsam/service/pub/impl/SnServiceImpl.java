@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * Service - SN
- * Created by Sebarswee on 2015/8/7.
+ * Created by tantian on 2015/8/7.
  */
 @Service("snServiceImpl")
 public class SnServiceImpl implements SnService {

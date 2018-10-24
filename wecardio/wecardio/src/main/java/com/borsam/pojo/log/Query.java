@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * <pre>
  * @Description: 日志过滤条件
- * @author :Zhang zhongtao
+ * @author :tantian
  * @version: Ver 1.0
  * @Date: 2015-08-22 18:11
  * </pre>

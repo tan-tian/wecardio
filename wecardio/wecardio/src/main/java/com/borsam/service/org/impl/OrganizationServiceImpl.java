@@ -37,7 +37,7 @@ import java.util.List;
 
 /**
  * Service - 鏈烘瀯淇℃伅
- * Created by Sebarswee on 2015/7/1.
+ * Created by tantian on 2015/7/1.
  */
 @Service("organizationServiceImpl")
 public class OrganizationServiceImpl extends BaseServiceImpl<Organization, Long> implements OrganizationService {

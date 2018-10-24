@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * <pre>
  * @Description: 平台销售金额统计
- * @author :Zhang zhongtao
+ * @author :tantian
  * @version: Ver 1.0
  * @Date: 2015-08-12 16:22
  * </pre>

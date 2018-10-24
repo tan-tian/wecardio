@@ -1,7 +1,7 @@
 /**
  *<pre>
  * Description: 微信工具方法
- * Author：Zhang zhongtao
+ * Author：tantian
  * Date：2014-11-24 16:54
  *</pre>
  */

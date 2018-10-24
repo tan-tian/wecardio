@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * Service - 插件
- * Created by Sebarswee on 2015/6/30.
+ * Created by tantian on 2015/6/30.
  */
 public interface PluginService {
 

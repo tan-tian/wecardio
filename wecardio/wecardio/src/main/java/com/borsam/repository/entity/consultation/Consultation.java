@@ -25,7 +25,7 @@ import java.util.Date;
 
 /**
  * Entity - 诊单信息
- * Created by Sebarswee on 2015/7/22.
+ * Created by tantian on 2015/7/22.
  */
 @Entity
 @Table(name = "consultation")

@@ -5,7 +5,7 @@ import com.hiteam.common.base.service.BaseService;
 
 /**
  * Service - 患者钱包
- * Created by Sebarswee on 2015/7/31.
+ * Created by tantian on 2015/7/31.
  */
 public interface PatientWalletService extends BaseService<PatientWallet, Long> {
 

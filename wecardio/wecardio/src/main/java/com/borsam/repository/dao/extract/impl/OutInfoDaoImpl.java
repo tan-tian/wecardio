@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Dao - 出账信息
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Repository("outInfoDaoImpl")
 public class OutInfoDaoImpl extends BaseDaoImpl<OutInfo, Long> implements OutInfoDao {

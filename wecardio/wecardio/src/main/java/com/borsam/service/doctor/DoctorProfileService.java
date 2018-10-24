@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Service - 医生信息
- * Created by Sebarswee on 2015/6/23.
+ * Created by tantian on 2015/6/23.
  */
 public interface DoctorProfileService extends BaseService<DoctorProfile, Long> {
 

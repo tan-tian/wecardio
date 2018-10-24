@@ -31,7 +31,7 @@ import java.util.List;
 
 /**
  * Controller - 机构管理
- * Created by Sebarswee on 2015/6/29.
+ * Created by tantian on 2015/6/29.
  */
 @Controller("orgOrganizationController")
 @RequestMapping("/org/organization")

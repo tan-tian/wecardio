@@ -18,7 +18,7 @@ import java.util.*;
 
 /**
  * Service - 流程查询服务
- * Created by Sebarswee on 2015/7/7.
+ * Created by tantian on 2015/7/7.
  */
 @Service("queryServiceImpl")
 public class QueryServiceImpl implements QueryService {

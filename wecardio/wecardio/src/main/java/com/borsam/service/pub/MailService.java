@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * Service - 邮件
- * Created by Sebarswee on 2015/6/23.
+ * Created by tantian on 2015/6/23.
  */
 public interface MailService {
 

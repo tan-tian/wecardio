@@ -5,7 +5,7 @@ import com.hiteam.common.base.repository.dao.BaseDao;
 
 /**
  * Dao - 患者钱包
- * Created by Sebarswee on 2015/7/31.
+ * Created by tantian on 2015/7/31.
  */
 public interface PatientWalletDao extends BaseDao<PatientWallet, Long> {
 

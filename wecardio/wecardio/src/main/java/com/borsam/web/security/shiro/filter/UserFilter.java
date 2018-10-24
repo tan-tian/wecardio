@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Filter - 用户
- * Created by Sebarswee on 2015/6/18.
+ * Created by tantian on 2015/6/18.
  */
 public class UserFilter extends org.apache.shiro.web.filter.authc.UserFilter {
 

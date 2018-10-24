@@ -9,7 +9,7 @@ import javax.persistence.FlushModeType;
 
 /**
  * Dao - 医生图片
- * Created by Sebarswee on 2015/8/18.
+ * Created by tantian on 2015/8/18.
  */
 @Repository("doctorImageDaoImpl")
 public class DoctorImageDaoImpl extends BaseDaoImpl<DoctorImage, Long> implements DoctorImageDao {

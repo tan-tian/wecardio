@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/8/15.
+ * Created by tantian on 2015/8/15.
  */
 seajs.use(['jTemplates'], function () {
     $(document).ready(function() {

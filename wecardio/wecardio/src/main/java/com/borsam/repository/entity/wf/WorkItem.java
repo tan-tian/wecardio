@@ -13,7 +13,7 @@ import java.util.Date;
 
 /**
  * Entity - 工作项
- * Created by Sebarswee on 2015/7/3.
+ * Created by tantian on 2015/7/3.
  */
 @Entity
 @Table(name = "t_pub_wf_workitem")

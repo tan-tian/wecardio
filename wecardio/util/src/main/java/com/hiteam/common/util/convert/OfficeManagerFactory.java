@@ -6,7 +6,7 @@ import org.artofsolving.jodconverter.office.OfficeManager;
 
 /**
  * OpenOffice服务工厂类
- * Created by Sebarswee on 2014/11/1.
+ * Created by tantian on 2014/11/1.
  */
 public class OfficeManagerFactory {
     private OfficeManager officeManager;

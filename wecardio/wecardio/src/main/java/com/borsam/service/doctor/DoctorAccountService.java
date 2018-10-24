@@ -5,7 +5,7 @@ import com.hiteam.common.base.service.BaseService;
 
 /**
  * Service - 医生账号
- * Created by Sebarswee on 2015/6/18.
+ * Created by tantian on 2015/6/18.
  */
 public interface DoctorAccountService extends BaseService<DoctorAccount, Long> {
 

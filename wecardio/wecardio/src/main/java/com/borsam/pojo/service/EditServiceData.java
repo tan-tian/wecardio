@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Zhang zhongtao on 2015/7/25.
+ * Created by tantian on 2015/7/25.
  */
 public class EditServiceData implements Serializable {
 

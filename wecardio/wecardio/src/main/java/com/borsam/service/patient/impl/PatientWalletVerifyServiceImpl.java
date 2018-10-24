@@ -23,7 +23,7 @@ import java.util.Date;
 
 /**
  * Service - 患者钱包验证
- * Created by Sebarswee on 2015/7/23.
+ * Created by tantian on 2015/7/23.
  */
 @Service("patientWalletVerifyServiceImpl")
 public class PatientWalletVerifyServiceImpl extends BaseServiceImpl<PatientWalletVerify, Long> implements PatientWalletVerifyService {

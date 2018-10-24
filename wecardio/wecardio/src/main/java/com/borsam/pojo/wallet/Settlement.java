@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 /**
  * Bean - 机构月结信息
- * Created by Sebarswee on 2015/8/11.
+ * Created by tantian on 2015/8/11.
  */
 public class Settlement {
 

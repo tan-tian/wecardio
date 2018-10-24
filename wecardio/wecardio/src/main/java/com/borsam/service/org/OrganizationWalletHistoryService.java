@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * Service - 机构钱包流水
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 public interface OrganizationWalletHistoryService extends BaseService<OrganizationWalletHistory, Long> {
 

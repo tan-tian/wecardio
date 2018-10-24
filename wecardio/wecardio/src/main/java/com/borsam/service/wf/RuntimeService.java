@@ -6,7 +6,7 @@ import java.util.Map;
 
 /**
  * Service - 流程运行服务类
- * Created by Sebarswee on 2015/7/3.
+ * Created by tantian on 2015/7/3.
  */
 public interface RuntimeService {
 

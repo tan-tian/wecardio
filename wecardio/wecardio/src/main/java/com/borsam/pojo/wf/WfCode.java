@@ -2,7 +2,7 @@ package com.borsam.pojo.wf;
 
 /**
  * 流程代码常量类
- * Created by Sebarswee on 2015/7/3.
+ * Created by tantian on 2015/7/3.
  */
 public class WfCode {
 

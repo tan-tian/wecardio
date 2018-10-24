@@ -14,7 +14,7 @@ import java.util.Date;
 
 /**
  * Entity - 结算月份信息表
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Entity
 @Table(name = "t_month_clear")

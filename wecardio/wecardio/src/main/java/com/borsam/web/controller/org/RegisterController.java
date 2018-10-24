@@ -28,7 +28,7 @@ import java.util.UUID;
 
 /**
  * Controller - 机构注册
- * Created by Sebarswee on 2015/6/24.
+ * Created by tantian on 2015/6/24.
  */
 @Controller("orgRegisterController")
 @RequestMapping("/org/register")

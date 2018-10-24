@@ -2,7 +2,7 @@ package com.borsam.pub;
 
 /**
  * 用户类型
- * Created by Sebarswee on 2015/6/17.
+ * Created by tantian on 2015/6/17.
  */
 public enum UserType {
     admin("admin"), org("org"), doctor("doctor"), patient("patient");

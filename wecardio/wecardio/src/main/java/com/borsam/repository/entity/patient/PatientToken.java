@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 /**
  * Entity - 患者Token
- * Created by Sebarswee on 2015/6/27.
+ * Created by tantian on 2015/6/27.
  */
 @Entity
 @Table(name = "patient_token")

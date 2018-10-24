@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 
 /**
  * Entity - 患者钱包
- * Created by Sebarswee on 2015/7/31.
+ * Created by tantian on 2015/7/31.
  */
 @Entity
 @Table(name = "patient_wallet")

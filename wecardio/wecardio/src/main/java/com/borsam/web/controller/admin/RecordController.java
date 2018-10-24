@@ -32,7 +32,7 @@ import java.util.List;
 
 /**
  * Controller - 检查记录
- * Created by Sebarswee on 2015/7/26.
+ * Created by tantian on 2015/7/26.
  */
 @Controller("adminRecorderController")
 @RequestMapping(value = "/admin/record")

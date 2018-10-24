@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * Service - 患者Token
- * Created by Sebarswee on 2015/10/15.
+ * Created by tantian on 2015/10/15.
  */
 @Service("patientTokenServiceImpl")
 public class PatientTokenServiceImpl extends BaseServiceImpl<PatientToken, Long> implements PatientTokenService {

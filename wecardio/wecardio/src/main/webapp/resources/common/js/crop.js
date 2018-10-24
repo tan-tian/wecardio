@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/8/19.
+ * Created by tantian on 2015/8/19.
  */
 seajs.use(['msgBox', 'jcrop'], function (msgBox) {
     var scaleFactor = 1;

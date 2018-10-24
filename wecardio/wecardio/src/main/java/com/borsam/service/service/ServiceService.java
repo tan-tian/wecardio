@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Zhang zhongtao on 2015/7/25.
+ * Created by tantian on 2015/7/25.
  */
 public interface ServiceService extends BaseService<Service, ServiceKey> {
     /**

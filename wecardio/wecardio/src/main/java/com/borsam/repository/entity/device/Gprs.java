@@ -29,7 +29,7 @@ import com.hiteam.common.base.repository.entity.StringEntity;
 
 /**
  * Entity 设备绑定信息表 2016/01/28
- * @author Tony 
+ * @author tantian
  *
  */
 

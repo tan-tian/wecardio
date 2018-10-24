@@ -25,7 +25,7 @@ import java.util.UUID;
 
 /**
  * Service - 机构医生证书
- * Created by Sebarswee on 2015/7/1.
+ * Created by tantian on 2015/7/1.
  */
 @Service("organizationDoctorImageServiceImpl")
 public class OrganizationDoctorImageServiceImpl extends BaseServiceImpl<OrganizationDoctorImage, Long> implements OrganizationDoctorImageService {

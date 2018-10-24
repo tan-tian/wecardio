@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * Controller - 机构管理
- * Created by Sebarswee on 2015/7/7.
+ * Created by tantian on 2015/7/7.
  */
 @Controller("doctorOrganizationController")
 @RequestMapping("/doctor/organization")

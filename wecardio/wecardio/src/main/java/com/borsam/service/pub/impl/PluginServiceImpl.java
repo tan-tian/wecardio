@@ -12,7 +12,7 @@ import java.util.*;
 
 /**
  * Service - 插件
- * Created by Sebarswee on 2015/6/30.
+ * Created by tantian on 2015/6/30.
  */
 @Service("pluginServiceImpl")
 public class PluginServiceImpl implements PluginService {

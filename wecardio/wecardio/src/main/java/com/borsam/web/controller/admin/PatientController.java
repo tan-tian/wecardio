@@ -81,7 +81,7 @@ import java.util.*;
 
 /**
  * Controller - 患者管理
- * Created by Sebarswee on 2015/7/7.
+ * Created by tantian on 2015/7/7.
  */
 @Controller("adminPatientController")
 @RequestMapping("/admin/patient")

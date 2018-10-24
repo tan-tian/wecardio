@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/8/6.
+ * Created by tantian on 2015/8/6.
  */
 seajs.use(['validate'], function () {
     $(document).ready(function () {

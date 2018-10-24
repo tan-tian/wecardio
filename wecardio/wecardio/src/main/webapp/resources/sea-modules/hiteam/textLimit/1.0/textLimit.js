@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/9/18.
+ * Created by tantian on 2015/9/18.
  */
 define('hiteam/textLimit/1.0/textLimit', ['$', 'hiteam/textLimit/1.0/{theme}/css/textLimit.css'], function (require, exports, module) {
     'use strict';

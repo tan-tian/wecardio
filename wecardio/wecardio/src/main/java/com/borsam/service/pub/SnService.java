@@ -2,7 +2,7 @@ package com.borsam.service.pub;
 
 /**
  * Service - SN
- * Created by Sebarswee on 2015/8/7.
+ * Created by tantian on 2015/8/7.
  */
 public interface SnService {
 

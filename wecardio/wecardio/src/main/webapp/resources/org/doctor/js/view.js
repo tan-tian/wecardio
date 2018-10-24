@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/7/14.
+ * Created by tantian on 2015/7/14.
  */
 seajs.use([], function () {
     $(document).ready(function() {

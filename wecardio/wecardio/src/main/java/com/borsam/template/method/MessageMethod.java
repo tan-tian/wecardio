@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * 模板方法 - 国际化
- * Created by Sebarswee on 2015/6/23.
+ * Created by tantian on 2015/6/23.
  */
 @Component("messageMethod")
 public class MessageMethod implements TemplateMethodModel {

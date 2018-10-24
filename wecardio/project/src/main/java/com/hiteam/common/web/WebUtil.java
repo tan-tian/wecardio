@@ -22,7 +22,7 @@ import java.net.URLEncoder;
 /**
  * <pre>
  * Description: 获取requet/response等对象，便于获取session时，不用传入HttpServletRequest、HttpServletResponse
- * Author: Zhang zhongtao
+ * Author: tantian
  * Version:
  * Since: Ver 1.1
  * Date: 2014-10-30 09:32

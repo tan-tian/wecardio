@@ -1,7 +1,7 @@
 /**
  * <pre>
  * Description: 非Html5浏览器的placeholder特性支持，当文本框值为空时，设置为placeholder的值
- * Author：Zhang zhongtao
+ * Author：tantian
  * Date：2014-11-11 10:56
  * </pre>
  */

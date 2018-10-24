@@ -5,7 +5,7 @@ import com.hiteam.common.base.repository.dao.BaseDao;
 
 /**
  * Dao - 机构图片
- * Created by Sebarswee on 2015/8/18.
+ * Created by tantian on 2015/8/18.
  */
 public interface OrganizationImageDao extends BaseDao<OrganizationImage, Long> {
 

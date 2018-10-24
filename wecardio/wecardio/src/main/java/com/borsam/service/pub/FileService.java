@@ -5,7 +5,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 /**
  * Service - 文件
- * Created by Sebarswee on 2015/6/30.
+ * Created by tantian on 2015/6/30.
  */
 public interface FileService {
 

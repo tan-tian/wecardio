@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 /**
  * Bean - 平台汇总信息
- * Created by Sebarswee on 2015/8/15.
+ * Created by tantian on 2015/8/15.
  */
 public class PlatformSummary {
 

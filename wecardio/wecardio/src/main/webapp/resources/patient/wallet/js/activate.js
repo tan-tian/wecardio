@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/8/4.
+ * Created by tantian on 2015/8/4.
  */
 seajs.use(['validate', 'base64', 'rsa'], function (validate, base64, rsa) {
     $(document).ready(function() {

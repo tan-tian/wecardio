@@ -31,7 +31,7 @@ import java.util.Date;
 
 /**
  * 权限认证
- * Created by Sebarswee on 2015/6/17.
+ * Created by tantian on 2015/6/17.
  */
 public class AuthenticationRealm extends AuthorizingRealm {
 

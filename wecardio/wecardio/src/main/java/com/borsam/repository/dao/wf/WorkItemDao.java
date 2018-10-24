@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * Dao - 工作项
- * Created by Sebarswee on 2015/7/3.
+ * Created by tantian on 2015/7/3.
  */
 public interface WorkItemDao extends BaseDao<WorkItem, Long> {
 

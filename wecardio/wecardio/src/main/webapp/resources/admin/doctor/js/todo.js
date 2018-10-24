@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/7/15.
+ * Created by tantian on 2015/7/15.
  */
 seajs.use(['pageBar', 'jTemplates'], function() {
     $(document).ready(function() {

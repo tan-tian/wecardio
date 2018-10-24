@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 seajs.use(['msgBox', 'pageBar', 'jTemplates'], function (msgBox) {
     $(document).ready(function() {

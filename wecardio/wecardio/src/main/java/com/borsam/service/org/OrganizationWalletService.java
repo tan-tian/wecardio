@@ -5,7 +5,7 @@ import com.hiteam.common.base.service.BaseService;
 
 /**
  * Service - 机构钱包/
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 public interface OrganizationWalletService extends BaseService<OrganizationWallet, Long> {
 

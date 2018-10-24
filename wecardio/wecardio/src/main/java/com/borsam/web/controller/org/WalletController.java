@@ -29,7 +29,7 @@ import java.util.Map;
 
 /**
  * Controller - 钱包管理
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Controller("orgWalletController")
 @RequestMapping(value = "/org/wallet")

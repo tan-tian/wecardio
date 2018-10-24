@@ -13,7 +13,7 @@ import java.util.Date;
 
 /**
  * Entity - 出账记录
- * Created by Sebarswee on 2015/8/9.
+ * Created by tantian on 2015/8/9.
  */
 @Entity
 @Table(name = "t_out_info")

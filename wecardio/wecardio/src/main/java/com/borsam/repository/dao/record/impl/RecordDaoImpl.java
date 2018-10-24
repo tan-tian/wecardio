@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 /**
  * Dao - 检查记录
- * Created by Sebarswee on 2015/7/21.
+ * Created by tantian on 2015/7/21.
  */
 @Repository("recordDaoImpl")
 public class RecordDaoImpl extends BaseDaoImpl<Record, Long> implements RecordDao {

@@ -29,7 +29,7 @@ import java.util.UUID;
 
 /**
  * Controller - 医生登录
- * Created by Sebarswee on 2015/6/16.
+ * Created by tantian on 2015/6/16.
  */
 @Controller("doctorLoginController")
 @RequestMapping(value = "/doctor/login")

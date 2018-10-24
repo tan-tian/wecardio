@@ -33,7 +33,7 @@ import java.util.Map;
 
 /**
  * Service - 会诊申请
- * Created by Sebarswee on 2015/7/24.
+ * Created by tantian on 2015/7/24.
  */
 @Service("consultationServiceImpl")
 public class ConsultationServiceImpl extends BaseServiceImpl<Consultation, Long> implements ConsultationService {

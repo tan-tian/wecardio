@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * Entity - 语言
- * Created by Sebarswee on 2015/7/17.
+ * Created by tantian on 2015/7/17.
  */
 @Embeddable
 public class Language implements Serializable {

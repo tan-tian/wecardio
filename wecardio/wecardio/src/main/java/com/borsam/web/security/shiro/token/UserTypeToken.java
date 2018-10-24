@@ -5,7 +5,7 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 
 /**
  * 含用户类型的登录令牌
- * Created by Sebarswee on 2015/6/17.
+ * Created by tantian on 2015/6/17.
  */
 public class UserTypeToken extends UsernamePasswordToken {
 

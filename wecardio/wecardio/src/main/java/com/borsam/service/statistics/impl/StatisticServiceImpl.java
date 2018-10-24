@@ -39,7 +39,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * <pre>
  * @Description:
- * @author :Zhang zhongtao
+ * @author :tantian
  * @version: Ver 1.0
  * @Date: 2015-08-11 16:15
  * </pre>

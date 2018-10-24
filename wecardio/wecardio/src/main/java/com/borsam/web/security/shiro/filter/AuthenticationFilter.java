@@ -30,7 +30,7 @@ import java.util.UUID;
 
 /**
  * Filter - 权限认证
- * Created by Sebarswee on 2015/6/18.
+ * Created by tantian on 2015/6/18.
  */
 public class AuthenticationFilter extends FormAuthenticationFilter {
 

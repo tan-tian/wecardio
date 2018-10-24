@@ -17,7 +17,7 @@ import java.util.Date;
 /**
  * <pre>
  * @Description: 平台结算信息表
- * @author :Zhang zhongtao
+ * @author :tantian
  * @version: Ver 1.0
  * @Date: 2015-08-12 16:42
  * </pre>

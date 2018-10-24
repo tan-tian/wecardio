@@ -20,7 +20,7 @@ import java.util.UUID;
 
 /**
  * Controller - 患者登录
- * Created by Sebarswee on 2015/6/16.
+ * Created by tantian on 2015/6/16.
  */
 @Controller("patientLoginController")
 @RequestMapping(value = "/patient/login")

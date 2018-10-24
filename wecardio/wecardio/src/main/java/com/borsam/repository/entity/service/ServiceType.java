@@ -20,7 +20,7 @@ import java.util.UUID;
 
 /**
  * Entity - 服务配置
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 @Entity
 @Table(name = "service_type")

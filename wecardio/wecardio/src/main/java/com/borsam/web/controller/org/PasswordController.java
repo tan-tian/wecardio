@@ -30,7 +30,7 @@ import java.util.UUID;
 
 /**
  * Controller - 密码
- * Created by Sebarswee on 2015/9/2.
+ * Created by tantian on 2015/9/2.
  */
 @Controller("orgPasswordController")
 @RequestMapping(value = "/org/password")

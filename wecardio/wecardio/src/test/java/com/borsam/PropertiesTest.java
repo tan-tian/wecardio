@@ -10,7 +10,7 @@ import java.util.Properties;
 /**
  * <pre>
  * 根据客户提供的英文国际化资源文件覆盖到项目中
- * @author : Zhang zhongtao
+ * @author : tantian
  * @version : Ver 1.0
  * </pre>
  */

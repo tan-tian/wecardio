@@ -8,7 +8,7 @@ import java.io.StringWriter;
 /**
  * <pre>
  * Description:
- * Author: Zhang zhongtao
+ * Author: tantian
  * Version:
  * Since: Ver 1.1
  * Date: 2011-11-24 19:41

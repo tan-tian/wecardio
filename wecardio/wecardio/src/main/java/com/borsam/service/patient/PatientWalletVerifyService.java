@@ -7,7 +7,7 @@ import com.hiteam.common.web.Message;
 
 /**
  * Service - 患者钱包验证
- * Created by Sebarswee on 2015/7/23.
+ * Created by tantian on 2015/7/23.
  */
 public interface PatientWalletVerifyService extends BaseService<PatientWalletVerify, Long> {
     /***

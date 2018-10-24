@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * Dao - 活动环节
- * Created by Sebarswee on 2015/7/3.
+ * Created by tantian on 2015/7/3.
  */
 @Repository("actDaoImpl")
 public class ActDaoImpl extends BaseDaoImpl<Act, Long> implements ActDao {

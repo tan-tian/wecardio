@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Service - 机构信息
- * Created by Sebarswee on 2015/7/1.
+ * Created by tantian on 2015/7/1.
  */
 public interface OrganizationService extends BaseService<Organization, Long> {
 

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Dao - 活动记录
- * Created by Sebarswee on 2015/6/18.
+ * Created by tantian on 2015/6/18.
  */
 @Repository("patientActivityDaoImpl")
 public class PatientActivityDaoImpl extends BaseDaoImpl<PatientActivity, Long> implements PatientActivityDao {

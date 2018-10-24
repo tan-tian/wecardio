@@ -20,7 +20,7 @@ import java.util.UUID;
 
 /**
  * Controller - 管理后台登录
- * Created by Sebarswee on 2015/6/16.
+ * Created by tantian on 2015/6/16.
  */
 @Controller("adminLoginController")
 @RequestMapping(value = "/admin/login")

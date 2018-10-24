@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 /**
  * Key - {@link PatientService}表的复合主键
- * Created by Sebarswee on 2015/7/22.
+ * Created by tantian on 2015/7/22.
  */
 @Embeddable
 public class PatientServiceKey implements Serializable {

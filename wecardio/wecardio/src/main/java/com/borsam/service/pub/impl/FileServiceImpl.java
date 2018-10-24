@@ -25,7 +25,7 @@ import java.util.UUID;
 
 /**
  * Service - 文件
- * Created by Sebarswee on 2015/6/30.
+ * Created by tantian on 2015/6/30.
  */
 @Service("fileServiceImpl")
 public class FileServiceImpl implements FileService, ServletContextAware {

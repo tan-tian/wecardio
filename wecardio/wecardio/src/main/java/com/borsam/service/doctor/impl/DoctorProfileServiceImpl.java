@@ -105,7 +105,7 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
         doctorProfile.setFaceTime(0L);
         doctorProfile.setAddress("");
         doctorProfile.setIntro("");
-        doctorProfile.setAuditState(0); // 骞冲彴绠＄悊鏄惁闇�瑕佸鏍�
+        doctorProfile.setAuditState(0); // 骞冲彴绠＄悊鏄惁闇?瑕佸鏍?
         doctorProfile.setIsDelete(false);
         doctorProfile.setLastTime(0L);
         doctorProfile.setLoginState(DoctorProfile.LoginState.offLine);
@@ -118,7 +118,7 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
 
         WebUtil.addCookie("org.username", doctorAccount.getEmail());
 
-        // 鍙戦�佹縺娲婚偖浠�
+        // 鍙戦?佹縺娲婚偖浠?
         DoctorToken token = new DoctorToken();
         token.setId(doctorAccount.getId());
         token.setToken(UUID.randomUUID().toString());
@@ -159,9 +159,9 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
         doctorProfile.setDoctorAccount(doctorAccount);
 
         if (isSubmit) {
-            doctorProfile.setAuditState(1); // 1-寰呭鏍�
+            doctorProfile.setAuditState(1); // 1-寰呭鏍?
         } else {
-            doctorProfile.setAuditState(0);  // 寰呮彁浜�
+            doctorProfile.setAuditState(0);  // 寰呮彁浜?
         }
         doctorProfile.setFaceTime(new Date().getTime() / 1000);
         doctorProfile.setIsDelete(false);
@@ -174,7 +174,7 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
         doctorProfile.setCommentNum(0);
         doctorProfile.setGuid(guid);
 
-        // 璁剧疆鎵�灞炴満鏋�
+        // 璁剧疆鎵?灞炴満鏋?
         DoctorAccount current = doctorAccountService.getCurrent();
         doctorProfile.setOrg(current.getDoctorProfile().getOrg());
 
@@ -204,9 +204,9 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
                     put("[WorkItem].result", "common.wf.result.reCreate");
                 }
             });
-            doctorProfile.setAuditState(1); // 1-寰呭鏍�
+            doctorProfile.setAuditState(1); // 1-寰呭鏍?
         } else {
-            doctorProfile.setAuditState(0); // 0-寰呬慨鏀�
+            doctorProfile.setAuditState(0); // 0-寰呬慨鏀?
         }
 
         // 淇濆瓨鍖荤敓澶村儚
@@ -243,9 +243,9 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
         // 淇濆瓨鍖荤敓澶村儚
         if (StringUtils.isNotEmpty(doctorProfile.getHeadPath())) {
             /**
-             * 鍖荤敓id鎵╁厖鎴�12浣嶅瓧绗︽偅锛屽10000聽->聽000000010000
-             * 鏂囦欢璺緞锛毬�/doctor/00/00/00/01/00/00/10000
-             * 缂╃暐璺緞锛�/doctor/00/00/00/01/00/00/10000.thumb  (80X80)
+             * 鍖荤敓id鎵╁厖鎴?12浣嶅瓧绗︽偅锛屽10000聽->聽000000010000
+             * 鏂囦欢璺緞锛毬?/doctor/00/00/00/01/00/00/10000
+             * 缂╃暐璺緞锛?/doctor/00/00/00/01/00/00/10000.thumb  (80X80)
              */
             String leftPad = StringUtils.leftPad(doctorProfile.getId() + "", 12, "0");
             String uploadPath = "/doctor/";
@@ -258,7 +258,7 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
             String basePath = ConfigUtils.config.getProperty("uploadPath");
             String headPath = uploadPath + doctorProfile.getId();
             String thumbPath  = uploadPath + doctorProfile.getId() + ".thumb";
-            // 澶村儚鏃犲彉鏇�
+            // 澶村儚鏃犲彉鏇?
             if (doctorProfile.getHeadPath().equals(headPath)) {
                 doctorProfile.setThumbPath(thumbPath);
                 return;
@@ -267,14 +267,14 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
                 File source = new File(basePath, doctorProfile.getHeadPath());
                 // 澶村儚
                 FileUtil.copyFile(source, new File(basePath, headPath));
-                // 缂╃暐鍥�
+                // 缂╃暐鍥?
                 Multimedia.saveImage(source, basePath + headPath + "-thumb.jpg", 80, 80);
                 File thumb = new File(basePath + headPath + "-thumb.jpg");
                 FileUtil.copyFile(thumb, new File(basePath, thumbPath));
                 FileUtil.deleteQuietly(thumb);
             } catch (IOException e) {
                 e.printStackTrace();
-                throw new RuntimeException("淇濆瓨澶村儚澶辫触锛�");
+                throw new RuntimeException("淇濆瓨澶村儚澶辫触锛?");
             }
             doctorProfile.setHeadPath(headPath);
             doctorProfile.setThumbPath(thumbPath);
@@ -297,9 +297,9 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
             // 鍒ゆ柇娴佺▼鏄惁褰掓。
             WfInst wfInst = wfInstDao.find(guid);
             if (wfInst.getStatus().equals(WfInst.Status.finished)) {
-                // 褰掓。鍚庤缃満鏋勫鏍哥姸鎬佷负婵�娲�
+                // 褰掓。鍚庤缃満鏋勫鏍哥姸鎬佷负婵?娲?
                 doctorProfile.setAuditState(2);
-                // 婵�娲昏处鍙�
+                // 婵?娲昏处鍙?
                 DoctorAccount doctorAccount = doctorProfile.getDoctorAccount();
                 doctorAccount.setIsActive(true);
                 doctorAccountService.update(doctorAccount);
@@ -309,7 +309,7 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
                 organizationDao.merge(org);
             }
         } else {
-            // 鏃犺鍒濆杩樻槸缁堝锛屽洖閫�鐩存帴鎵撳洖鏈烘瀯鐢宠鐜妭
+            // 鏃犺鍒濆杩樻槸缁堝锛屽洖閫?鐩存帴鎵撳洖鏈烘瀯鐢宠鐜妭
             Act act = actDao.getAct(WfCode.DOCTOR, "create");
             processEngine.pushProcessInstance(guid, act, null, new HashMap<String, String>() {
                 {
@@ -317,7 +317,7 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
                     put("[WorkItem].remark", remark);
                 }
             });
-            // 璁剧疆瀹℃牳鐘舵�佷负寰呮彁浜�
+            // 璁剧疆瀹℃牳鐘舵?佷负寰呮彁浜?
             doctorProfile.setAuditState(0);
         }
 
@@ -328,12 +328,12 @@ public class DoctorProfileServiceImpl extends BaseServiceImpl<DoctorProfile, Lon
     @Override
     public void disable(Long[] did) {
         for (Long id : did) {
-            // 璁剧疆鍖荤敓淇℃伅涓哄垹闄�
+            // 璁剧疆鍖荤敓淇℃伅涓哄垹闄?
             DoctorProfile doctorProfile = this.find(id);
             doctorProfile.setIsDelete(true);
             this.update(doctorProfile);
 
-            // 璁剧疆鍖荤敓璐﹀彿涓哄垹闄�
+            // 璁剧疆鍖荤敓璐﹀彿涓哄垹闄?
             DoctorAccount doctorAccount = doctorAccountService.find(id);
             doctorAccount.setIsDelete(true);
             doctorAccountService.update(doctorAccount);

@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * Dao - 患者信息
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 public interface PatientProfileDao extends BaseDao<PatientProfile, Long> {
 

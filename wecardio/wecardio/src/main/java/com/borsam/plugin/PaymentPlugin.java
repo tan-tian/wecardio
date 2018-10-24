@@ -28,7 +28,7 @@ import java.util.Map;
 
 /**
  * Plugin - 支付
- * Created by Sebarswee on 2015/8/5.
+ * Created by tantian on 2015/8/5.
  */
 public abstract class PaymentPlugin implements Comparable<PaymentPlugin> {
 

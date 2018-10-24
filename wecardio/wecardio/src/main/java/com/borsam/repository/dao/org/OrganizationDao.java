@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Dao - 机构信息
- * Created by Sebarswee on 2015/7/1.
+ * Created by tantian on 2015/7/1.
  */
 public interface OrganizationDao extends BaseDao<Organization, Long> {
 

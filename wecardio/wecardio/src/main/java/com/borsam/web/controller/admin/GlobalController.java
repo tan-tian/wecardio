@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * <pre>
  *  语言国际化
- * @author : Zhang zhongtao
+ * @author : tantian
  * @version : Ver 1.0
  * </pre>
  */

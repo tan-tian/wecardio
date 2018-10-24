@@ -9,7 +9,7 @@ import javax.persistence.FlushModeType;
 
 /**
  * Dao - 医生账号
- * Created by Sebarswee on 2015/6/18.
+ * Created by tantian on 2015/6/18.
  */
 @Repository("doctorAccountDaoImpl")
 public class DoctorAccountDaoImpl extends BaseDaoImpl<DoctorAccount, Long> implements DoctorAccountDao {

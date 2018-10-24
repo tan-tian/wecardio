@@ -44,7 +44,7 @@ import java.util.Map;
 
 /**
  * Service - 检查记录
- * Created by Sebarswee on 2015/7/21.
+ * Created by tantian on 2015/7/21.
  */
 @Service("recordServiceImpl")
 public class RecordServiceImpl extends BaseServiceImpl<Record, Long> implements RecordService {

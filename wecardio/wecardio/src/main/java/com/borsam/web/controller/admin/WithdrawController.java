@@ -28,7 +28,7 @@ import java.util.List;
 
 /**
  * Controller - 提现管理
- * Created by Sebarswee on 2015/8/13.
+ * Created by tantian on 2015/8/13.
  */
 @Controller("adminWithdrawController")
 @RequestMapping(value = "/admin/withdraw")

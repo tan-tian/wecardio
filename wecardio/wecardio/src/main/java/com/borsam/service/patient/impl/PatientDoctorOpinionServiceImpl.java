@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * Service - 患者账号
- * Created by Sebarswee on 2015/6/18.
+ * Created by tantian on 2015/6/18.
  */
 @Service("patientDoctorOpinionServiceImpl")
 public class PatientDoctorOpinionServiceImpl extends BaseServiceImpl<PatientDoctorOpinion, Long> implements PatientDoctorOpinionService {

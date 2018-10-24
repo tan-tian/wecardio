@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * Service - 流程查询服务
- * Created by Sebarswee on 2015/7/7.
+ * Created by tantian on 2015/7/7.
  */
 public interface QueryService {
 

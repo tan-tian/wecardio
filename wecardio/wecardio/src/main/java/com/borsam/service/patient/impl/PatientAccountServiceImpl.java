@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 
 /**
  * Service - 患者账号
- * Created by Sebarswee on 2015/6/18.
+ * Created by tantian on 2015/6/18.
  */
 @Service("patientAccountServiceImpl")
 public class PatientAccountServiceImpl extends BaseServiceImpl<PatientAccount, Long> implements PatientAccountService {

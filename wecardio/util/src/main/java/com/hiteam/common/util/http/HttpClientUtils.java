@@ -41,7 +41,7 @@ import java.util.Map;
 
 /**
  * HttpClient工具类
- * Created by Sebarswee on 2015/4/7.
+ * Created by tantian on 2015/4/7.
  */
 public class HttpClientUtils {
 

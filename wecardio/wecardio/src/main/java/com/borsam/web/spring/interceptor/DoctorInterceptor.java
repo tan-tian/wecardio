@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * Interceptor - 机构拦截器
- * Created by Sebarswee on 2015/8/21.
+ * Created by tantian on 2015/8/21.
  */
 public class DoctorInterceptor extends HandlerInterceptorAdapter {
 

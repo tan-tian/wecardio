@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Dao - 患者购买的服务信息
- * Created by Sebarswee on 2015/7/22.
+ * Created by tantian on 2015/7/22.
  */
 @Repository("patientServiceDaoImpl")
 public class PatientServiceDaoImpl extends BaseDaoImpl<PatientService, PatientServiceKey> implements PatientServiceDao {

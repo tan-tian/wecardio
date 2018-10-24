@@ -27,7 +27,7 @@ import java.util.Map;
 
 /**
  * Controller - 钱包管理
- * Created by Sebarswee on 2015/8/3.
+ * Created by tantian on 2015/8/3.
  */
 @Controller
 @RequestMapping(value =  "/patient/wallet")

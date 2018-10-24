@@ -9,7 +9,7 @@ import javax.persistence.FlushModeType;
 
 /**
  * Dao - 机构医生证书
- * Created by Sebarswee on 2015/8/18.
+ * Created by tantian on 2015/8/18.
  */
 @Repository("organizationDoctorImageDaoImpl")
 public class OrganizationDoctorImageDaoImpl extends BaseDaoImpl<OrganizationDoctorImage, Long> implements OrganizationDoctorImageDao {

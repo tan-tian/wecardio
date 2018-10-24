@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  * Service - 枚举
- * Created by Sebarswee on 2015/7/15.
+ * Created by tantian on 2015/7/15.
  */
 public interface EnumService extends BaseService<Enum, Long> {
 

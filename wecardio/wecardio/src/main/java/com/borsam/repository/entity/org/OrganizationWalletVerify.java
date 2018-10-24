@@ -9,7 +9,7 @@ import javax.persistence.*;
 
 /**
  * Entity - 机构钱包验证
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Entity
 @Table(name = "organization_wallet_verify")

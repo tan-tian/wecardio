@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * Service - 机构钱包
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Service("organizationWalletServiceImpl")
 public class OrganizationWalletServiceImpl extends BaseServiceImpl<OrganizationWallet, Long> implements OrganizationWalletService {

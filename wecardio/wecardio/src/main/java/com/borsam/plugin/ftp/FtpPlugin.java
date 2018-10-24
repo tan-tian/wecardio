@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  * Plugin - FTP存储
- * Created by Sebarswee on 2015/6/30.
+ * Created by tantian on 2015/6/30.
  */
 public class FtpPlugin extends StoragePlugin {
 

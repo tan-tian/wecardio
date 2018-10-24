@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * Dao - 患者信息
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 @Repository("patientProfileDaoImpl")
 public class PatientProfileDaoImpl extends BaseDaoImpl<PatientProfile, Long> implements PatientProfileDao {

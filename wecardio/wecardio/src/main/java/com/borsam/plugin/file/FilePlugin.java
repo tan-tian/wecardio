@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * Plugin - 本地存储
- * Created by Sebarswee on 2015/6/30.
+ * Created by tantian on 2015/6/30.
  */
 @Component("filePlugin")
 public class FilePlugin extends StoragePlugin {

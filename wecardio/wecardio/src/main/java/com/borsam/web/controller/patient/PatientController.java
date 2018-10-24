@@ -32,7 +32,7 @@ import java.util.List;
 
 /**
  * Controller - 患者管理
- * Created by Sebarswee on 2015/7/7.
+ * Created by tantian on 2015/7/7.
  */
 @Controller("patientPatientController")
 @RequestMapping("/patient/patient")

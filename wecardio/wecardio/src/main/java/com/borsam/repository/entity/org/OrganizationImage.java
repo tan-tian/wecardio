@@ -11,7 +11,7 @@ import javax.persistence.*;
 
 /**
  * Entity - 机构图片
- * Created by Sebarswee on 2015/7/1.
+ * Created by tantian on 2015/7/1.
  */
 @Entity
 @Table(name = "organization_pic")

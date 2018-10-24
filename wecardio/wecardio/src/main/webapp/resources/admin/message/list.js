@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/7/13.
+ * Created by tantian on 2015/7/13.
  */
 seajs.use(['msgBox', 'pageBar', 'jTemplates', 'select', 'mulSelect'], function (msgBox) {
     $(document).ready(function() {

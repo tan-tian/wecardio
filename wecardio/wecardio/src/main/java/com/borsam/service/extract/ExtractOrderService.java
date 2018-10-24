@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * Service - 提现单据
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 public interface ExtractOrderService extends BaseService<ExtractOrder, Long> {
 

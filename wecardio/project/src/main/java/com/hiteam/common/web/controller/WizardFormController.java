@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Controller - 向导型Controller
  * 使用注解@SessionAttributes(value = {"user"})    // 模型对象中名字如果是“user”将存储在会话范围，并自动暴露到模型数据中
- * Created by Sebarswee on 2015/8/11.
+ * Created by tantian on 2015/8/11.
  */
 public class WizardFormController {
 

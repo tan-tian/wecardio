@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by Zhang zhongtao on 2015/7/29.
+ * Created by tantian on 2015/7/29.
  */
 @RequiresUser
 @RestController("doctorServiceController")

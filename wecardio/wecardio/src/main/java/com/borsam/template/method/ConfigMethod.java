@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * 模板方法 - 获取配置
- * Created by Sebarswee on 2015/6/23.
+ * Created by tantian on 2015/6/23.
  */
 @Component("configMethod")
 public class ConfigMethod implements TemplateMethodModel {

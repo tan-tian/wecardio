@@ -9,7 +9,7 @@ import javax.persistence.FlushModeType;
 
 /**
  * Dao - 平台管理员账号
- * Created by Sebarswee on 2015/6/19.
+ * Created by tantian on 2015/6/19.
  */
 @Repository("adminDaoImpl")
 public class AdminDaoImpl extends BaseDaoImpl<Admin, Long> implements AdminDao {

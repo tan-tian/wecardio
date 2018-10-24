@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  * Entity - 流程实例
- * Created by Sebarswee on 2015/7/3.
+ * Created by tantian on 2015/7/3.
  */
 @Entity
 @Table(name = "t_pub_wf_inst")

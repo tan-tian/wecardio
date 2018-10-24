@@ -27,7 +27,7 @@ import java.util.List;
 
 /**
  * Service - 鎮ｈ�呬俊鎭�
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 @Service("patientProfileServiceImpl")
 public class PatientProfileServiceImpl extends BaseServiceImpl<PatientProfile, Long> implements PatientProfileService {

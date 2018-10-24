@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/7/10.
+ * Created by tantian on 2015/7/10.
  */
 seajs.use(['msgBox'], function (msgBox) {
     // 图片事件

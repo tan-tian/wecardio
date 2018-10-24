@@ -27,7 +27,7 @@ import java.util.Map;
 
 /**
  * Controller - 提现管理
- * Created by Sebarswee on 2015/8/11.
+ * Created by tantian on 2015/8/11.
  */
 @Controller("orgWithdrawWizardController")
 @RequestMapping(value = "/org/withdraw/wizard")

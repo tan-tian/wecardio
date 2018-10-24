@@ -27,7 +27,7 @@ import java.util.List;
 
 /**
  * Controller - 鍖荤敓绠＄悊
- * Created by Sebarswee on 2015/7/15.
+ * Created by tantian on 2015/7/15.
  */
 @Controller("doctorDoctorController")
 @RequestMapping(value = "/doctor/doctor")

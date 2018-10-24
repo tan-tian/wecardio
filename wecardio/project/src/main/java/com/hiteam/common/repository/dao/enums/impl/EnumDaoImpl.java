@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * Dao - 枚举
- * Created by Sebarswee on 2015/7/15.
+ * Created by tantian on 2015/7/15.
  */
 @Repository("enumDaoImpl")
 public class EnumDaoImpl extends BaseDaoImpl<Enum, Long> implements EnumDao {

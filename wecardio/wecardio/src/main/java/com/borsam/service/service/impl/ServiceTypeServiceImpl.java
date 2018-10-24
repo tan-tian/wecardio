@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * Service - 服务配置
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 @Service("serviceTypeServiceImpl")
 public class ServiceTypeServiceImpl extends BaseServiceImpl<ServiceType, Long> implements ServiceTypeService {

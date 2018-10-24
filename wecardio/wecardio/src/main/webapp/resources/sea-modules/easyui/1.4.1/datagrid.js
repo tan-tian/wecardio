@@ -1,7 +1,7 @@
 /**
  * <pre>
  * Description:easyui 的表格插件 jquery.datagrid.js
- * Author：Zhang zhongtao
+ * Author：tantian
  * Date：2014-11-05 11:51
  * </pre>
  */

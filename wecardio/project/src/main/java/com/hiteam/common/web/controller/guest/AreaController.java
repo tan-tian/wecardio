@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 地区 - Controller
- * Created by Sebarswee on 2014/9/28.
+ * Created by tantian on 2014/9/28.
  */
 @Controller("commonAreaController")
 @RequestMapping(value = "/guest/pub/area")

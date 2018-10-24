@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * Service - 出账信息
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Service("outInfoServiceImpl")
 public class OutInfoServiceImpl extends BaseServiceImpl<OutInfo, Long> implements OutInfoService {

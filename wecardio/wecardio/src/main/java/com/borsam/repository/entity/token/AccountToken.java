@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  * Entity - Token基类
- * Created by Sebarswee on 2015/6/27.
+ * Created by tantian on 2015/6/27.
  */
 @MappedSuperclass
 public class AccountToken extends LongEntity {

@@ -52,7 +52,7 @@ import java.util.Map;
 
 /**
  * Controller - 诊单管理
- * Created by Sebarswee on 2015/7/27.
+ * Created by tantian on 2015/7/27.
  */
 @Controller("doctorConsultationController")
 @RequestMapping(value = "/doctor/consultation")

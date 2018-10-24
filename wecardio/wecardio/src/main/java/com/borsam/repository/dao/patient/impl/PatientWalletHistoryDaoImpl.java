@@ -12,7 +12,7 @@ import java.util.Calendar;
 
 /**
  * Dao - 患者账户流水信息
- * Created by Sebarswee on 2015/8/4.
+ * Created by tantian on 2015/8/4.
  */
 @Repository("patientWalletHistoryDaoImpl")
 public class PatientWalletHistoryDaoImpl extends BaseDaoImpl<PatientWalletHistory, Long> implements PatientWalletHistoryDao {

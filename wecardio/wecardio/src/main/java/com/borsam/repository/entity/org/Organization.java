@@ -25,7 +25,7 @@ import java.util.*;
 
 /**
  * Entity - 机构信息
- * Created by Sebarswee on 2015/6/23.
+ * Created by tantian on 2015/6/23.
  */
 @Entity
 @Table(name = "organization")

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Dao - 提现单据
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Repository("extractOrderDaoImpl")
 public class ExtractOrderDaoImpl extends BaseDaoImpl<ExtractOrder, Long> implements ExtractOrderDao {

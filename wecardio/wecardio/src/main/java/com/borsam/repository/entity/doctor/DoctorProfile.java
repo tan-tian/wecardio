@@ -1,33 +1,66 @@
 package com.borsam.repository.entity.doctor;
 
+import com.borsam.repository.entity.org.Organization;
+
 import javax.persistence.*;
+import javax.validation.Valid;
+import java.util.List;
 
 /**
- * Created by Tony on 2017/6/15.
+ * Created by tantian on 2017/6/15.
  */
 @Entity
 @Table(name = "profile_doctor", schema = "wecardio_test")
 public class DoctorProfile {
+
+    /**
+     * 获取医生账号
+     * @return 医生账号
+     */
+    @OneToOne(fetch = FetchType.LAZY)
+    @PrimaryKeyJoinColumn
+    public DoctorAccount getDoctorAccount() {
+        return doctorAccount;
+    }
+
+    public void setDoctorAccount(DoctorAccount doctorAccount) {
+        this.doctorAccount = doctorAccount;
+    }
+
+    public void setIsDelete(boolean isDelete) {
+        this.isDelete = isDelete;
+    }
+
+    public boolean getIsDelete() {
+        return isDelete;
+    }
+
+    /**
+     * 性别
+     */
+    public enum Gender {
+        unset, female, male, other
+    }
+
     private long id;
     private String firstName;
     private String fullName;
     private String secondName;
-    private int birthday;
+    private long birthday;
     private String mobile;
     private String email;
     private String ic;
-    private byte sex;
+    private Gender sex;
     private int roles;
-    private int faceTime;
+    private long faceTime;
     private String address;
     private String intro;
     private int created;
     private String thumbPath;
     private String headPath;
-    private byte auditState;
-    private Long oid;
+    private int auditState;
     private byte deleteState;
-    private int lastTime;
+    private Long lastTime;
     private byte loginState;
     private String zoneCode;
     private Integer nationCode;
@@ -38,12 +71,20 @@ public class DoctorProfile {
     private String proviceName;
     private Integer cityCode;
     private String cityName;
-    private String postcode;
     private Integer patientNum;
     private Integer orderNum;
     private Integer commentNum;
     private Integer commentScore;
     private Long guid;
+    private Organization org;               // 所属机构
+    private String provinceName;            // 省份
+    private String postCode;                // 邮编
+    private String account;
+    private String headImg;                 // 头像图片地址
+    private List<DoctorImage> doctorImages;
+    private DoctorAccount doctorAccount;
+    private Boolean isDelete;
+
 
     @Id
     @Column(name = "id")
@@ -87,11 +128,11 @@ public class DoctorProfile {
 
     @Basic
     @Column(name = "birthday")
-    public int getBirthday() {
+    public long getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(int birthday) {
+    public void setBirthday(long birthday) {
         this.birthday = birthday;
     }
 
@@ -127,11 +168,11 @@ public class DoctorProfile {
 
     @Basic
     @Column(name = "sex")
-    public byte getSex() {
+    public Gender getSex() {
         return sex;
     }
 
-    public void setSex(byte sex) {
+    public void setSex(Gender sex) {
         this.sex = sex;
     }
 
@@ -147,11 +188,11 @@ public class DoctorProfile {
 
     @Basic
     @Column(name = "face_time")
-    public int getFaceTime() {
+    public long getFaceTime() {
         return faceTime;
     }
 
-    public void setFaceTime(int faceTime) {
+    public void setFaceTime(long faceTime) {
         this.faceTime = faceTime;
     }
 
@@ -207,22 +248,12 @@ public class DoctorProfile {
 
     @Basic
     @Column(name = "audit_state")
-    public byte getAuditState() {
+    public int getAuditState() {
         return auditState;
     }
 
-    public void setAuditState(byte auditState) {
+    public void setAuditState(int auditState) {
         this.auditState = auditState;
-    }
-
-    @Basic
-    @Column(name = "oid")
-    public Long getOid() {
-        return oid;
-    }
-
-    public void setOid(Long oid) {
-        this.oid = oid;
     }
 
     @Basic
@@ -237,11 +268,11 @@ public class DoctorProfile {
 
     @Basic
     @Column(name = "last_time")
-    public int getLastTime() {
+    public long getLastTime() {
         return lastTime;
     }
 
-    public void setLastTime(int lastTime) {
+    public void setLastTime(long lastTime) {
         this.lastTime = lastTime;
     }
 
@@ -346,16 +377,6 @@ public class DoctorProfile {
     }
 
     @Basic
-    @Column(name = "postcode")
-    public String getPostcode() {
-        return postcode;
-    }
-
-    public void setPostcode(String postcode) {
-        this.postcode = postcode;
-    }
-
-    @Basic
     @Column(name = "patient_num")
     public Integer getPatientNum() {
         return patientNum;
@@ -407,10 +428,88 @@ public class DoctorProfile {
 
     /**
      * 获取全名
+     *
      * @return 全名
      */
     @Transient
     public String getName() {
-        return (getFirstName() != null && getFullName()!=null)?getFirstName()+getFullName():null;
+        return (getFirstName() != null && getFullName() != null) ? getFirstName() + getFullName() : null;
+    }
+
+    /**
+     * 获取所属机构
+     *
+     * @return 所属机构
+     */
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "oid")
+    public Organization getOrg() {
+        return org;
+    }
+
+    /**
+     * 设置所属机构
+     *
+     * @param org 所属机构
+     */
+    public void setOrg(Organization org) {
+        this.org = org;
+    }
+
+    public enum LoginState {
+        ;
+        public static byte offLine=0;
+        public static byte onLine=1;
+    }
+
+    public String getProvinceName() {
+        return provinceName;
+    }
+
+    public void setProvinceName(String provinceName) {
+        this.provinceName = provinceName;
+    }
+
+    /**
+     * 获取邮编
+     * @return 邮编
+     */
+    @Column(name = "postcode", length = 128)
+    public String getPostCode() {
+        return postCode;
+    }
+
+    /**
+     * 设置邮编
+     * @param postCode 邮编
+     */
+    public void setPostCode(String postCode) {
+        this.postCode = postCode;
+    }
+
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    public void setHeadImg(String headImg) {
+        this.headImg = headImg;
+    }
+
+    public String getHeadImg() {
+        return headImg;
+    }
+
+    @Valid
+    @OneToMany(mappedBy = "doctor", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    public List<DoctorImage> getDoctorImages() {
+        return doctorImages;
+    }
+
+    public void setDoctorImages(List<DoctorImage> doctorImages) {
+        this.doctorImages = doctorImages;
     }
 }

@@ -22,7 +22,7 @@ import java.util.TreeMap;
 
 /**
  * Plugin - 支付宝（即时交易）
- * Created by Sebarswee on 2015/8/5.
+ * Created by tantian on 2015/8/5.
  */
 @Component("alipayDirectPlugin")
 public class AlipayDirectPlugin extends PaymentPlugin {

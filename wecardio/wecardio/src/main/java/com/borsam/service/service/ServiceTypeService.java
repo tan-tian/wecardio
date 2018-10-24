@@ -5,7 +5,7 @@ import com.hiteam.common.base.service.BaseService;
 
 /**
  * Service - 服务配置
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 public interface ServiceTypeService extends BaseService<ServiceType, Long> {
     /***

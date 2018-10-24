@@ -1,5 +1,7 @@
 package com.hiteam.common.base.service;
 
+import com.hiteam.common.base.pojo.search.Filter;
+import com.hiteam.common.base.pojo.search.Order;
 import com.hiteam.common.base.pojo.search.Page;
 import com.hiteam.common.base.pojo.search.Pageable;
 
@@ -7,7 +9,7 @@ import java.util.List;
 
 /**
  * Service基类
- * @author Tony
+ * @author tantian
  *
  * @param <T>
  * @param <ID>
@@ -35,4 +37,10 @@ public interface BaseService<T,ID> {
 	void delete(ID... ids);
 
 	List<T> findList(ID... ids);
+
+	List<T> findList(Integer count, List<Filter> filters, List<Order> orders);
+
+	void update(T object, String created);
+
+	T update(T entity);
 }

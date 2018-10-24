@@ -5,7 +5,7 @@ import org.artofsolving.jodconverter.office.OfficeManager;
 
 /**
  * OpenOffice服务类
- * Created by Sebarswee on 2014/11/2.
+ * Created by tantian on 2014/11/2.
  */
 public class OfficeManagerService {
 

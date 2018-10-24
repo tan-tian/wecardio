@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * <pre>
  * Description: 业务Controller基类，默认提供添删改查能力
- * Author: Zhang zhongtao
+ * Author: tantian
  * Version:
  * Since: Ver 1.1
  * Date: 2014-12-26 16:21

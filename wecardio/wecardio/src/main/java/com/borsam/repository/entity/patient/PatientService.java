@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  * Entity - 患者购买的服务信息
- * Created by Sebarswee on 2015/7/22.
+ * Created by tantian on 2015/7/22.
  */
 @Entity
 @Table(name = "patient_service")

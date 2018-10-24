@@ -3,7 +3,7 @@ package com.hiteam.common.util.json;
 /**
  * <pre>
  * @Description:
- * @author :Zhang zhongtao
+ * @author :tantian
  * @version: Ver 1.0
  * @Date: 2015-08-23 12:01
  * </pre>

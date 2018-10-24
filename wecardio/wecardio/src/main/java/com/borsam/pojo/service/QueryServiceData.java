@@ -5,7 +5,7 @@ import com.hiteam.common.base.pojo.search.Pageable;
 import java.io.Serializable;
 
 /**
- * Created by Zhang zhongtao on 2015/7/26.
+ * Created by tantian on 2015/7/26.
  * 服务查询参数
  */
 public class QueryServiceData extends Pageable implements Serializable {

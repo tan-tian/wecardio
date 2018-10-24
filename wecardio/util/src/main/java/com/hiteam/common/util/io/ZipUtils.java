@@ -12,7 +12,7 @@ import java.io.OutputStream;
 
 /**
  * Zip压缩工具
- * Created by Sebarswee on 2014/12/3.
+ * Created by tantian on 2014/12/3.
  */
 public class ZipUtils {
 

@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/8/14.
+ * Created by tantian on 2015/8/14.
  */
 seajs.use(['msgBox'], function (msgBox) {
     $(document).ready(function () {

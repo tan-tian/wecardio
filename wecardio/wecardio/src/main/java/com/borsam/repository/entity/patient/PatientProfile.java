@@ -21,7 +21,7 @@ import java.util.Set;
 
 /**
  * Entity - 患者信息
- * Created by Sebarswee on 2015/7/17.
+ * Created by tantian on 2015/7/17.
  */
 @Entity
 @Table(name = "profile_patient")

@@ -15,7 +15,7 @@ import java.util.Date;
 
 /**
  * Entity - 平台管理员账号
- * Created by Sebarswee on 2015/6/19.
+ * Created by tantian on 2015/6/19.
  */
 @Entity
 @Table(name = "t_admin")

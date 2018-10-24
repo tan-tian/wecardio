@@ -17,7 +17,7 @@ import java.util.Date;
 
 /**
  * Entity - 患者账户流水信息
- * Created by Sebarswee on 2015/8/4.
+ * Created by tantian on 2015/8/4.
  */
 @Entity
 @Table(name = "patient_wallet_history")

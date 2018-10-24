@@ -22,7 +22,7 @@ import java.util.Date;
 
 /**
  * Service - 机构钱包认证
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Service("organizationWalletVerifyServiceImpl")
 public class OrganizationWalletVerifyServiceImpl extends BaseServiceImpl<OrganizationWalletVerify, Long> implements OrganizationWalletVerifyService {

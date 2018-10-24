@@ -9,7 +9,7 @@ import javax.persistence.FlushModeType;
 
 /**
  * Dao - 会诊申请
- * Created by Sebarswee on 2015/7/24.
+ * Created by tantian on 2015/7/24.
  */
 @Repository("consultationDaoImpl")
 public class ConsultationDaoImpl extends BaseDaoImpl<Consultation, Long> implements ConsultationDao {

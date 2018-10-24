@@ -1,6 +1,6 @@
 /**
  * 实收金额详情记录
- * Created by Sebarswee on 2016/3/14.
+ * Created by tantian on 2016/3/14.
  */
 seajs.use(['easyuiDatagrid', 'pageBar'], function () {
     $('#list').datagrid({

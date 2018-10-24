@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/8/12.
+ * Created by tantian on 2015/8/12.
  */
 seajs.use(['msgBox', 'select', 'validate'], function (msgBox) {
     $.fn.serializeJSON = function () {

@@ -18,7 +18,7 @@ import java.util.Date;
 
 /**
  * Entity - 检查记录
- * Created by Sebarswee on 2015/7/21.
+ * Created by tantian on 2015/7/21.
  */
 @Entity
 @Table(name = "record")

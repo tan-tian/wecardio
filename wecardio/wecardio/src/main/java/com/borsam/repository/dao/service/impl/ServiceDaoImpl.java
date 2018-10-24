@@ -16,7 +16,7 @@ import java.util.Map;
 
 /**
  * Dao - 服务项
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 @Repository("serviceDaoImpl")
 public class ServiceDaoImpl extends BaseDaoImpl<Service, ServiceKey> implements ServiceDao {

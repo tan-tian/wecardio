@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Dao - 患者Token
- * Created by Sebarswee on 2015/10/15.
+ * Created by tantian on 2015/10/15.
  */
 @Repository("patientTokenDaoImpl")
 public class PatientTokenDaoImpl extends BaseDaoImpl<PatientToken, Long> implements PatientTokenDao {

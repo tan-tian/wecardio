@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * <pre>
  * Description: 设置Web线程变量
- * Author: Zhang zhongtao
+ * Author: tantian
  * Version:
  * Since: Ver 1.1
  * Date: 2014-10-30 09:30

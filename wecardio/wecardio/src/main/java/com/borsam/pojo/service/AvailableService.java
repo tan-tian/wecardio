@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 
 /**
  * Bean - 可用服务
- * Created by Sebarswee on 2015/10/11.
+ * Created by tantian on 2015/10/11.
  */
 public class AvailableService implements Serializable {
 

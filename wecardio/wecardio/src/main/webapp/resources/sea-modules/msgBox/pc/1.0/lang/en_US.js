@@ -1,5 +1,5 @@
 /**
- * Created by Zhang zhongtao on 2015/11/13.
+ * Created by tantian on 2015/11/13.
  */
 var msgBoxLanguage = {
     confirmTitle:'Note',

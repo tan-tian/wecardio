@@ -28,7 +28,7 @@ import java.util.List;
 
 /**
  * Controller - 医生管理
- * Created by Sebarswee on 2015/7/15.
+ * Created by tantian on 2015/7/15.
  */
 @Controller("patientDoctorController")
 @RequestMapping(value = "/patient/doctor")

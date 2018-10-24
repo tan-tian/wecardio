@@ -3,7 +3,7 @@ package com.hiteam.common.pojo.enums;
 /**
  * <pre>
  * Description:
- * Author:Zhang zhongtao
+ * Author:tantian
  * Since: Ver 1.1
  * Date: 2015-05-04 22:50
  * </pre>

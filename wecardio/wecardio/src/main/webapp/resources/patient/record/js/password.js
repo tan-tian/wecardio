@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/7/23.
+ * Created by tantian on 2015/7/23.
  */
 seajs.use(['msgBox', 'base64', 'rsa', 'validate'], function (msgBox, base64, rsa) {
     $(document).ready(function() {

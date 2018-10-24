@@ -1,30 +1,41 @@
 package com.borsam.repository.entity.doctor;
 
+import com.hiteam.common.base.repository.entity.LongEntity;
+import org.hibernate.search.annotations.DocumentId;
+
 import javax.persistence.*;
 
 /**
- * Created by Tony on 2017/6/15.
+ * Created by tantian on 2017/6/15.
  */
 @Entity
-@Table(name = "account_doctor", schema = "wecardio_test")
-public class DoctorAccount {
-    private long id;
+@Table(name = "account_doctor")
+public class DoctorAccount extends LongEntity {
+
     private String mobile;
     private String email;
     private String password;
     private byte activeState;
     private byte deleteState;
     private int created;
+    private DoctorProfile doctorProfile;
+    private Boolean isActive;
+    private Boolean isDelete;
 
+    /**
+     * 获取ID
+     * @return ID
+     */
+    @DocumentId
     @Id
     @Column(name = "id")
-    public long getId() {
-        return id;
+    @GeneratedValue(strategy = GenerationType.TABLE, generator = "tableGenerator")
+    @TableGenerator(name = "tableGenerator", table = "id_maker", pkColumnName = "maker_name",
+            valueColumnName = "maker_value", pkColumnValue = "doctor", allocationSize = 1)
+    public Long getId() {
+        return super.getId();
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
 
     @Basic
     @Column(name = "mobile")
@@ -92,8 +103,6 @@ public class DoctorAccount {
         if (o == null || getClass() != o.getClass()) return false;
 
         DoctorAccount that = (DoctorAccount) o;
-
-        if (id != that.id) return false;
         if (activeState != that.activeState) return false;
         if (deleteState != that.deleteState) return false;
         if (created != that.created) return false;
@@ -104,15 +113,33 @@ public class DoctorAccount {
         return true;
     }
 
-    @Override
-    public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (mobile != null ? mobile.hashCode() : 0);
-        result = 31 * result + (email != null ? email.hashCode() : 0);
-        result = 31 * result + (password != null ? password.hashCode() : 0);
-        result = 31 * result + (int) activeState;
-        result = 31 * result + (int) deleteState;
-        result = 31 * result + created;
-        return result;
+    /**
+     * 获取医生信息
+     * @return 医生信息
+     */
+    @OneToOne(fetch = FetchType.LAZY)
+    @PrimaryKeyJoinColumn
+    public DoctorProfile getDoctorProfile() {
+        return doctorProfile;
+    }
+
+    public void setDoctorProfile(DoctorProfile doctorProfile) {
+        this.doctorProfile = doctorProfile;
+    }
+
+    public void setIsActive(boolean isActive) {
+        this.isActive = isActive;
+    }
+
+    public boolean getIsActive() {
+        return isActive;
+    }
+
+    public void setIsDelete(boolean isDelete) {
+        this.isDelete = isDelete;
+    }
+
+    public boolean getIsDelete() {
+        return isDelete;
     }
 }

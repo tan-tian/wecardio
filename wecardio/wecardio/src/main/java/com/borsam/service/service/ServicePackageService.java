@@ -11,7 +11,7 @@ import com.hiteam.common.web.Message;
 import java.util.Map;
 
 /**
- * Created by Zhang zhongtao on 2015/7/25.
+ * Created by tantian on 2015/7/25.
  */
 public interface ServicePackageService extends BaseService<ServicePackage, Long> {
     /**

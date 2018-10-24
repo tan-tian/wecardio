@@ -5,7 +5,7 @@ import com.hiteam.common.base.repository.dao.BaseDao;
 
 /**
  * Dao - 患者钱包验证
- * Created by Sebarswee on 2015/7/23.
+ * Created by tantian on 2015/7/23.
  */
 public interface PatientWalletVerifyDao extends BaseDao<PatientWalletVerify, Long> {
 }

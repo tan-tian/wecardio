@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * Dao - 机构钱包流水
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 public interface OrganizationWalletHistoryDao extends BaseDao<OrganizationWalletHistory, Long> {
 

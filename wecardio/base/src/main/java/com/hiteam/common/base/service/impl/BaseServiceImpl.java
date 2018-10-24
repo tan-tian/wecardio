@@ -68,6 +68,11 @@ public class BaseServiceImpl<T, ID extends Serializable> implements BaseService<
 		return findList(null, count, filters, orders);
 	}
 
+	@Override
+	public void update(T object, String created) {
+
+	}
+
 	@Transactional(readOnly = true)
 	public List<T> findList(Integer first, Integer count, List<Filter> filters, List<Order> orders) {
 		return this.baseDao.findList(first, count, filters, orders);

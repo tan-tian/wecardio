@@ -12,7 +12,7 @@ import java.util.Set;
 
 /**
  * Entity - 流程活动
- * Created by Sebarswee on 2015/7/3.
+ * Created by tantian on 2015/7/3.
  */
 @Entity
 @Table(name = "t_pub_wf_act")

@@ -20,7 +20,7 @@ import java.util.List;
 
 /**
  * Entity - 提现单据
- * Created by Sebarswee on 2015/8/9.
+ * Created by tantian on 2015/8/9.
  */
 @Entity
 @Table(name = "t_extract_order")

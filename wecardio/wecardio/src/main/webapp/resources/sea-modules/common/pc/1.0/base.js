@@ -1,7 +1,7 @@
 /**
  *<pre>
  * Description: PC端模块化必须使用的js文件
- * Author：Zhang zhongtao
+ * Author：tantian
  * Date：2014-11-01 13:55
  *</pre>
  */

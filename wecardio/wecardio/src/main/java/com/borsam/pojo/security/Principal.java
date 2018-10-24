@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * 身份信息
- * Created by Sebarswee on 2015/6/17.
+ * Created by tantian on 2015/6/17.
  */
 public class Principal implements Serializable {
 

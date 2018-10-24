@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * Filter - 登出
- * Created by Sebarswee on 2015/6/18.
+ * Created by tantian on 2015/6/18.
  */
 public class LogoutFilter extends org.apache.shiro.web.filter.authc.LogoutFilter {
 

@@ -9,7 +9,7 @@ import javax.persistence.FlushModeType;
 
 /**
  * Dao - 月结信息
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Repository("monthClearDaoImpl")
 public class MonthClearDaoImpl extends BaseDaoImpl<MonthClear, Long> implements MonthClearDao {

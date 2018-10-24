@@ -5,7 +5,7 @@ import org.apache.shiro.authc.AuthenticationException;
 /**
  * <pre>
  * Description:
- * Author: Zhang zhongtao
+ * Author: tantian
  * Version:
  * Since: Ver 1.1
  * Date: 2015-01-21 10:01

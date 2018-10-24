@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * Dao - 活动参与者
- * Created by Sebarswee on 2015/7/3.
+ * Created by tantian on 2015/7/3.
  */
 @Repository("actorDaoImpl")
 public class ActorDaoImpl extends BaseDaoImpl<Actor, Long> implements ActorDao {

@@ -13,7 +13,7 @@ import java.util.Date;
 
 /**
  * Entity - 服务项
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 @Entity
 @IdClass(ServiceKey.class)

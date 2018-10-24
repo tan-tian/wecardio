@@ -5,7 +5,7 @@ import com.hiteam.common.base.service.BaseService;
 
 /**
  * Service - 医生资质证书
- * Created by Sebarswee on 2015/7/14.
+ * Created by tantian on 2015/7/14.
  */
 public interface DoctorImageService extends BaseService<DoctorImage, Long> {
 

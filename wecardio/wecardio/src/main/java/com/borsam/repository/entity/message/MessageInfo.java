@@ -14,7 +14,7 @@ import java.util.Date;
 
 /**
  * Entity - 消息管理
- * Created by Sebarswee on 2015/7/17.
+ * Created by tantian on 2015/7/17.
  */
 @Entity
 @Table(name = "message")

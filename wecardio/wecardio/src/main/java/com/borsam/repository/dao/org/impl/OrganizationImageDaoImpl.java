@@ -9,7 +9,7 @@ import javax.persistence.FlushModeType;
 
 /**
  * Dao - 机构图片
- * Created by Sebarswee on 2015/8/18.
+ * Created by tantian on 2015/8/18.
  */
 @Repository("organizationImageDaoImpl")
 public class OrganizationImageDaoImpl extends BaseDaoImpl<OrganizationImage, Long> implements OrganizationImageDao {

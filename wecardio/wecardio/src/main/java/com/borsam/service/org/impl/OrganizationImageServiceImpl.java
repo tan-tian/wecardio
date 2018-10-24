@@ -25,7 +25,7 @@ import java.util.UUID;
 
 /**
  * Service - 机构图片
- * Created by Sebarswee on 2015/7/1.
+ * Created by tantian on 2015/7/1.
  */
 @Service("organizationImageServiceImpl")
 public class OrganizationImageServiceImpl extends BaseServiceImpl<OrganizationImage, Long> implements OrganizationImageService {

@@ -19,7 +19,7 @@ import java.util.*;
 
 /**
  * Dao - 机构钱包流水
- * Created by Sebarswee on 2015/8/10.
+ * Created by tantian on 2015/8/10.
  */
 @Repository("organizationWalletHistoryDaoImpl")
 public class OrganizationWalletHistoryDaoImpl extends BaseDaoImpl<OrganizationWalletHistory, Long> implements OrganizationWalletHistoryDao {

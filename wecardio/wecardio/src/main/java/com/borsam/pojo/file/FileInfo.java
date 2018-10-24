@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * 文件信息
- * Created by Sebarswee on 2015/6/30.
+ * Created by tantian on 2015/6/30.
  */
 public class FileInfo {
 

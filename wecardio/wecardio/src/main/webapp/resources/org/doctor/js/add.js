@@ -1,5 +1,5 @@
 /**
- * Created by Sebarswee on 2015/7/14.
+ * Created by tantian on 2015/7/14.
  */
 seajs.use(['BaiduUploader', 'msgBox', 'select', 'validate', 'cookie', 'textLimit'], function (BaiduUploader, msgBox) {
     $(document).ready(function () {

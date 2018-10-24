@@ -24,7 +24,7 @@ import java.util.Date;
 /**
  * <pre>
  * @Description: 购买服务订单信息
- * @author :Zhang zhongtao
+ * @author :tantian
  * @version: Ver 1.0
  * @Date: 2015-08-04 09:58
  * </pre>

@@ -45,7 +45,7 @@ import java.util.List;
 
 /**
  * Controller - 患者管理
- * Created by Tony on 2015/7/7.
+ * Created by tantian on 2015/7/7.
  */
 @Controller("orgDeviceController")
 @RequestMapping("/org/device")

@@ -1,5 +1,5 @@
 /**
- * Created by Tony on 2015/12/24.
+ * Created by tantian on 2015/12/24.
  */
 seajs.use(['pageBar', 'jTemplates', 'mulSelect', 'select'], function() {
     $(document).ready(function() {

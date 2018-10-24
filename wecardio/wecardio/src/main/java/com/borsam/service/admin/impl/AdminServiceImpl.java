@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 
 /**
  * Service - 平台管理员账号
- * Created by Sebarswee on 2015/6/19.
+ * Created by tantian on 2015/6/19.
  */
 @Service("adminServiceImpl")
 public class AdminServiceImpl extends BaseServiceImpl<Admin, Long> implements AdminService {

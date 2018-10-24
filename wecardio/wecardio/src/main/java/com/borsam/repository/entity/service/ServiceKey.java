@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * Service的联合主键
- * Created by Sebarswee on 2015/7/20.
+ * Created by tantian on 2015/7/20.
  */
 @Embeddable
 public class ServiceKey implements Serializable {
