@@ -32,8 +32,8 @@ public class SetWebThreadLocalFilter implements Filter {
         WebUtil.setRequest((HttpServletRequest) servletRequest);
 
         chain.doFilter(servletRequest, servletResponse);
-        WebUtil.setResponse(null);
-        WebUtil.setRequest(null);
+        WebUtil.setResponse((HttpServletResponse) servletResponse);
+        WebUtil.setRequest((HttpServletRequest) servletRequest);
     }
 
     public void destroy() {
